@@ -1,0 +1,23 @@
+@mixin main-font($type, $weight) {
+    $url: "./fonts/Arimo-#{$type}";
+    @font-face {
+        font-family: centrale_sans_cyr;
+        src: url("#{$url}.woff") format("woff"),
+            url("#{$url}.woff2") format("woff2"),
+            url("#{$url}.ttf") format("truetype");
+        font-weight: $weight;
+        font-display: fallback;
+    }
+}
+
+@mixin second-font($type, $weight) {
+    $url: "./fonts/Montserrat-#{$type}";
+    @font-face {
+        font-family: centrale_sans_cyr;
+        src: url("#{$url}.woff") format("woff"),
+            url("#{$url}.woff2") format("woff2"),
+            url("#{$url}.ttf") format("truetype");
+        font-weight: $weight;
+        font-display: fallback;
+    }
+}
