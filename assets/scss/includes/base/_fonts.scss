@@ -1,55 +1,24 @@
-@mixin main-font($type, $weight) {
-    $url: "fonts/Arimo#{$type}";
-    @font-face {
-        font-family: centrale_sans_cyr;
-        src: url("https://admin.uz.philips.online/#{$url}.woff") format("woff"),
-            url("https://admin.uz.philips.online/#{$url}.woff2") format("woff2"),
-            url("https://admin.uz.philips.online/#{$url}.ttf") format("truetype");
-        font-weight: $weight;
-        font-display: fallback;
-    }
-}
+//MIXINS
+@include arimo-font("Regular", 400);
+@include arimo-font("Italic", 400, 'italic');
+@include arimo-font("Bold", 700);
+@include arimo-font("BoldItalic", 700, 'italic');
 
-@font-face {
-	font-family: 'Arimo';
-	src: url('Arimo-BoldItalic.eot');
-	src: local('Arimo Bold Italic'), local('Arimo-BoldItalic'),
-		url('Arimo-BoldItalic.eot?#iefix') format('embedded-opentype'),
-		url('Arimo-BoldItalic.woff') format('woff'),
-		url('Arimo-BoldItalic.ttf') format('truetype');
-	font-weight: bold;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Arimo';
-	src: url('Arimo-Bold.eot');
-	src: local('Arimo Bold'), local('Arimo-Bold'),
-		url('Arimo-Bold.eot?#iefix') format('embedded-opentype'),
-		url('Arimo-Bold.woff') format('woff'),
-		url('Arimo-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Arimo';
-	src: url('Arimo-Italic.eot');
-	src: local('Arimo Italic'), local('Arimo-Italic'),
-		url('Arimo-Italic.eot?#iefix') format('embedded-opentype'),
-		url('Arimo-Italic.woff') format('woff'),
-		url('Arimo-Italic.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Arimo';
-	src: url('Arimo.eot');
-	src: local('Arimo'),
-		url('Arimo.eot?#iefix') format('embedded-opentype'),
-		url('Arimo.woff') format('woff'),
-		url('Arimo.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+@include montserrat-font("Thin", 100);
+@include montserrat-font("ThinItalic", 100, 'italic');
+@include montserrat-font("ExtraLight",200);
+@include montserrat-font("ExtraLightItalic", 200, 'italic');
+@include montserrat-font("Light", 300);
+@include montserrat-font("LightItalic", 300, 'italic');
+@include montserrat-font("Regular", 400);
+@include montserrat-font("Italic", 400, 'italic');
+@include montserrat-font("Medium", 500);
+@include montserrat-font("MediumItalic", 500, 'italic');
+@include montserrat-font("SemiBold", 600);
+@include montserrat-font("SemiBoldItalic", 600, 'italic');
+@include montserrat-font("Bold", 700);
+@include montserrat-font("BoldItalic", 700, 'italic');
+@include montserrat-font("ExtraBold", 800);
+@include montserrat-font("ExtraBoldItalic", 800, 'italic');
+@include montserrat-font("Black", 900);
+@include montserrat-font("BlackItalic", 900, 'italic');

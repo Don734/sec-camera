@@ -1,23 +1,26 @@
-@mixin main-font($type, $weight) {
-    $url: "./fonts/Arimo-#{$type}";
+@mixin arimo-font($type, $weight, $style: 'normal') {
+    $url: "./fonts/Arimo/Arimo-#{$type}";
     @font-face {
-        font-family: centrale_sans_cyr;
+        font-family: 'Arimo';
         src: url("#{$url}.woff") format("woff"),
             url("#{$url}.woff2") format("woff2"),
             url("#{$url}.ttf") format("truetype");
         font-weight: $weight;
+        font-style: $style;
         font-display: fallback;
     }
 }
 
-@mixin second-font($type, $weight) {
-    $url: "./fonts/Montserrat-#{$type}";
+@mixin montserrat-font($type, $weight, $style: 'normal') {
+    $url: "./fonts/Montserrat/Montserrat-#{$type}";
     @font-face {
-        font-family: centrale_sans_cyr;
-        src: url("#{$url}.woff") format("woff"),
-            url("#{$url}.woff2") format("woff2"),
-            url("#{$url}.ttf") format("truetype");
+        font-family: 'Montserrat';
+        src: local('Montserrat Thin'), local('Montserrat-Thin'),
+            url('#{$url}.eot?#iefix') format('embedded-opentype'),
+            url('#{$url}.woff') format('woff'),
+            url('#{$url}.ttf') format('truetype');
         font-weight: $weight;
+        font-style: $style;
         font-display: fallback;
     }
 }
