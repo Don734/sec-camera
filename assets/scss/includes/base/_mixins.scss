@@ -1,4 +1,4 @@
-@mixin arimo-font($type, $weight, $style: 'normal') {
+@mixin arimo-font($type, $weight) {
     $url: "./fonts/Arimo/Arimo-#{$type}";
     @font-face {
         font-family: 'Arimo';
@@ -6,12 +6,10 @@
             url("#{$url}.woff2") format("woff2"),
             url("#{$url}.ttf") format("truetype");
         font-weight: $weight;
-        font-style: $style;
-        font-display: fallback;
     }
 }
 
-@mixin montserrat-font($type, $weight, $style: 'normal') {
+@mixin montserrat-font($type, $weight) {
     $url: "./fonts/Montserrat/Montserrat-#{$type}";
     @font-face {
         font-family: 'Montserrat';
@@ -20,7 +18,5 @@
             url('#{$url}.woff') format('woff'),
             url('#{$url}.ttf') format('truetype');
         font-weight: $weight;
-        font-style: $style;
-        font-display: fallback;
     }
 }

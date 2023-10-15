@@ -40,7 +40,7 @@
 
             &::after {
                 width: 10px;
-                background-color: $teal;
+                background-color: $custom-green;
             }
         }
 
@@ -74,7 +74,7 @@
 
             &::after {
                 width: 10px;
-                background-color: $teal;
+                background-color: $custom-green;
             }
 
             .btn {
@@ -86,7 +86,7 @@
                 }
 
                 &:hover {
-                    color: $teal;
+                    color: $custom-green;
                 }
             }
 
@@ -95,6 +95,108 @@
                 background-color: transparent;
                 border-color: transparent;
             }
+        }
+    }
+
+    .bottom-bar {
+        position: relative;
+
+        .icon-col {
+            display: flex;
+            align-items: center;
+
+            .icon {
+                height: 40px;
+                font-size: 36px;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 20px;
+
+                span {
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: $custom-green;
+                }
+
+                small {
+                    font-family: 'Arimo', serif;
+                    font-size: 16px;
+                    color: $gray-600;
+                }
+            }
+        }
+
+        .navbar {
+            height: 70px;
+            background-color: $custom-green !important;
+
+            .nav-item {
+                .nav-link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    padding: 0 35px;
+                    font-size: 15px;
+                    letter-spacing: 0.36px;
+                    color: $white;
+
+                    &.active {
+                        font-weight: bold;
+                        color: $black;
+                    }
+
+                    &:hover {
+                        color: $black;
+                    }
+                }
+
+                .search-link {
+                    width: 40px;
+                    height: 40px;
+                    padding: 0;
+                    border: 1px dashed $black;
+                    border-radius: 50%;
+                }
+
+                .basket-link {
+                    font-size: 26px;
+                }
+
+                
+
+                &:first-of-type {
+                    .nav-link {
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .question-link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                width: 280px;
+                height: 70px;
+                color: $white;
+                background-color: $black;
+                text-transform: uppercase;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 20%;
+            height: 70px;
+            background-color: $custom-green;
         }
     }
 }

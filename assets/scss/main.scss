@@ -1,10 +1,5 @@
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../bootstrap/scss/_functions";
-
-// 2. Include any default variable overrides here
-@import './includes/base/_vars';
-
 // Required
+@import "../bootstrap/scss/_functions";
 @import "../bootstrap/scss/_variables";
 @import "../bootstrap/scss/_variables-dark";
 @import "../bootstrap/scss/_maps";
@@ -47,6 +42,7 @@
 @import "../bootstrap/scss/_transitions";
 
 // Add additional custom code here
+@import './includes/base/_vars';
 @import './includes/base/_default';
 @import './includes/base/_mixins';
 
