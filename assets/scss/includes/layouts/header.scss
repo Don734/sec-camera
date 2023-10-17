@@ -1,9 +1,13 @@
 .header {
     .top-bar {
+        position: relative;
         display: flex;
         align-items: center;
         height: 60px;
-        background-color: $gray-200;
+
+        .container {
+            z-index: 1;
+        }
 
         .col {
             height: 60px;
@@ -19,6 +23,7 @@
             align-items: center;
             justify-content: flex-end;
             height: 60px;
+            background-color: $gray-200;
 
             &::after, &::before {
                 content: '';
@@ -51,6 +56,7 @@
         .col-right {
             position: relative;
             display: flex;
+            justify-content: space-between;
             align-items: center;
             background-color: $gray-900;
 
@@ -95,6 +101,29 @@
                 background-color: transparent;
                 border-color: transparent;
             }
+
+            .dropdown-menu {
+                max-width: 100px;
+                width: 100%;
+            }
+        }
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 25%;
+            height: 100%;
+        }
+
+        &::before {
+            left: 0;
+            background-color: $gray-200;
+        }
+
+        &::after {
+            right: 0;
+            background-color: $gray-900;
         }
     }
 
