@@ -62,10 +62,6 @@
             border: 2px solid $white;
             background-color: transparent;
 
-            span {
-                display: flex;
-            }
-
             &:hover {
                 background-color: $custom-green;
                 border-color: $custom-green;

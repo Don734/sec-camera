@@ -16,11 +16,55 @@ a {
     text-decoration: none;
 }
 
-p {
+p, dl * {
     margin: 0;
     padding: 0;
 }
 
 .container {
     max-width: 1170px;
+}
+
+.badge {
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Arimo';
+    font-weight: 700;
+    color: $gray-600;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: $gray-900;
+    line-height: 46px;
+}
+
+.divider {
+    position: relative;
+    max-width: 55px;
+    height: 4px;
+    outline: none;
+    border: none;
+    opacity: 1;
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+    }
+
+    &::before {
+        left: 0;
+        width: 40px;
+        background-color: $custom-green;
+    }
+
+    &::after {
+        right: 0;
+        width: 10px;
+        background-color: $black;
+    }
 }
