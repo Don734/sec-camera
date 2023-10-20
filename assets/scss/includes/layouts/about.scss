@@ -1,19 +1,42 @@
 .about {
     padding-top: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 160px;
 
     .img-block {
         position: relative;
         max-width: 535px;
         height: 678px;
         
-        .overlay {
+        .bg-overlay {
             position: relative;
             display: block;
             max-width: 480px;
             width: 100%;
             height: 100%;
             background-color: $gray-200;
+            z-index: 2;
+        }
+
+        .play-video {
+            position: absolute;
+            left: 235px;
+            bottom: -35px;
+            width: 70px;
+            height: 70px;
+            color: $white;
+            font-size: 20px;
+            background-color: $gray-700;
+            border-radius: 0;
+            z-index: 2;
+        }
+
+        .preview {
+            position: absolute;
+            right: 0;
+            bottom: -55px;
+            width: 165px;
+            height: 165px;
+            background-color: $gray-700;
             z-index: 2;
         }
 
@@ -33,7 +56,7 @@
         }
 
         &::after {
-            top: 40%;
+            bottom: -24%;
             right: 20px;
             max-width: 280px;
             width: 100%;
@@ -59,5 +82,29 @@
             padding-right: 15px;
             color: $custom-green;
         }
+    }
+
+    .subtitle {
+        font-family: 'Arimo';
+        font-weight: 700;
+        color: $gray-600;
+    }
+
+    .phone-link {
+        font-weight: 700;
+        font-size: 30px;
+        color: $gray-900;
+    }
+
+    .link {
+        max-width: 150px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        border: 1px solid $custom-green;
+        border-radius: 10px;
     }
 }

@@ -13492,20 +13492,41 @@ p, dl * {
 
 .about {
   padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 160px;
 }
 .about .img-block {
   position: relative;
   max-width: 535px;
   height: 678px;
 }
-.about .img-block .overlay {
+.about .img-block .bg-overlay {
   position: relative;
   display: block;
   max-width: 480px;
   width: 100%;
   height: 100%;
   background-color: #e9ecef;
+  z-index: 2;
+}
+.about .img-block .play-video {
+  position: absolute;
+  left: 235px;
+  bottom: -35px;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  font-size: 20px;
+  background-color: #495057;
+  border-radius: 0;
+  z-index: 2;
+}
+.about .img-block .preview {
+  position: absolute;
+  right: 0;
+  bottom: -55px;
+  width: 165px;
+  height: 165px;
+  background-color: #495057;
   z-index: 2;
 }
 .about .img-block::before, .about .img-block::after {
@@ -13522,7 +13543,7 @@ p, dl * {
   z-index: 1;
 }
 .about .img-block::after {
-  top: 40%;
+  bottom: -24%;
   right: 20px;
   max-width: 280px;
   width: 100%;
@@ -13544,6 +13565,101 @@ p, dl * {
 .about dl dt {
   padding-right: 15px;
   color: #85c226;
+}
+.about .subtitle {
+  font-family: "Arimo";
+  font-weight: 700;
+  color: #6c757d;
+}
+.about .phone-link {
+  font-weight: 700;
+  font-size: 30px;
+  color: #212529;
+}
+.about .link {
+  max-width: 150px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  border: 1px solid #85c226;
+  border-radius: 10px;
+}
+
+.achievements {
+  position: relative;
+  margin-top: -50px;
+  background-color: transparent;
+}
+.achievements .container {
+  position: relative;
+  padding: 70px 0;
+  border-top: 25px solid #212529;
+  background-color: #fff;
+  box-shadow: 0 16px 25px rgba(0, 0, 0, 0.16);
+}
+.achievements .container::before, .achievements .container::after {
+  content: "";
+  position: absolute;
+}
+.achievements .container::before {
+  left: -30px;
+  top: 0;
+  bottom: 0;
+  width: 5%;
+  background-color: #fff;
+}
+.achievements .container::after {
+  top: -25px;
+  right: -100px;
+  border-top: 255px solid #212529;
+  border-right: 100px solid transparent;
+}
+.achievements .col .icon {
+  position: relative;
+  margin-right: 25px;
+}
+.achievements .col .icon img {
+  z-index: 1;
+}
+.achievements .col .icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  width: 40px;
+  height: 105px;
+  transform: translateY(-50%);
+  border: 1px solid #ced4da;
+}
+.achievements .col .count {
+  font-size: 44px;
+  font-weight: bolder;
+  color: #85c226;
+}
+.achievements .col .subtext {
+  font-family: "Arimo";
+  font-size: 16px;
+}
+.achievements::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  border-top: 25px solid #212529;
+  background-color: #fff;
+  box-shadow: 0 16px 25px rgba(0, 0, 0, 0.16);
+}
+
+.offers {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  margin-top: -100px;
+  background-image: url("../images/parallax1.jpg");
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */
