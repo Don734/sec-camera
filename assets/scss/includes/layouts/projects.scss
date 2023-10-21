@@ -1,0 +1,38 @@
+.projects {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        text-align: left;
+
+        .divider {
+            margin-left: 0;
+        }
+
+        .link {
+            color: $white;
+            background-color: $gray-900;
+            border: none;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 745px;
+        width: 100%;
+        height: 850px;
+        background-color: $custom-green;
+    }
+}

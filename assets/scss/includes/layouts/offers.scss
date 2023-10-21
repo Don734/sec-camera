@@ -4,4 +4,19 @@
     margin-top: -100px;
     background-image: url('../images/parallax1.jpg');
     background-repeat: no-repeat;
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .icon {
+            margin-bottom: 30px;
+        }
+
+        .subtext {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
 }

@@ -13046,12 +13046,32 @@ p, dl * {
   text-transform: uppercase;
 }
 
+.section-header {
+  padding-bottom: 60px;
+  text-align: center;
+}
+.section-header .divider {
+  margin: 0 auto;
+}
+
 .section-title {
   margin: 20px 0;
   font-size: 36px;
   font-weight: bold;
   color: #212529;
   line-height: 46px;
+}
+
+.link {
+  max-width: 150px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  border: 1px solid rgba(133, 194, 38, 0.8);
+  border-radius: 10px;
 }
 
 .divider {
@@ -13070,7 +13090,7 @@ p, dl * {
 .divider::before {
   left: 0;
   width: 40px;
-  background-color: #85c226;
+  background-color: rgba(133, 194, 38, 0.8);
 }
 .divider::after {
   right: 0;
@@ -13174,7 +13194,7 @@ p, dl * {
 }
 .header .top-bar .col-left::after {
   width: 10px;
-  background-color: #85c226;
+  background-color: rgba(133, 194, 38, 0.8);
 }
 .header .top-bar .col-middle {
   background-color: #fff;
@@ -13204,7 +13224,7 @@ p, dl * {
 }
 .header .top-bar .col-right::after {
   width: 10px;
-  background-color: #85c226;
+  background-color: rgba(133, 194, 38, 0.8);
 }
 .header .top-bar .col-right .btn {
   font-size: 16px;
@@ -13214,7 +13234,7 @@ p, dl * {
   flex: none;
 }
 .header .top-bar .col-right .btn:hover {
-  color: #85c226;
+  color: rgba(133, 194, 38, 0.8);
 }
 .header .top-bar .col-right .dropdown-toggle {
   font-size: 14px;
@@ -13280,7 +13300,7 @@ p, dl * {
 .header .bottom-bar .icon-col .content span {
   font-weight: 500;
   font-size: 20px;
-  color: #85c226;
+  color: rgba(133, 194, 38, 0.8);
 }
 .header .bottom-bar .icon-col .content small, .header .bottom-bar .icon-col .content .small {
   font-family: "Arimo", serif;
@@ -13289,7 +13309,7 @@ p, dl * {
 }
 .header .bottom-bar .navbar {
   height: 70px;
-  background-color: #85c226 !important;
+  background-color: rgba(133, 194, 38, 0.8) !important;
 }
 .header .bottom-bar .navbar .nav-item .nav-link {
   display: flex;
@@ -13339,7 +13359,7 @@ p, dl * {
   bottom: 0;
   width: 25%;
   height: 70px;
-  background-color: #85c226;
+  background-color: rgba(133, 194, 38, 0.8);
 }
 
 .slider {
@@ -13386,7 +13406,7 @@ p, dl * {
   margin-top: 30px;
   font-weight: 500;
   color: #fff;
-  background-color: #85c226;
+  background-color: rgba(133, 194, 38, 0.8);
   border-radius: 10px;
 }
 .slider .swiper-main .swiper-button-prev, .slider .swiper-main .swiper-button-next {
@@ -13400,8 +13420,8 @@ p, dl * {
   background-color: transparent;
 }
 .slider .swiper-main .swiper-button-prev:hover, .slider .swiper-main .swiper-button-next:hover {
-  background-color: #85c226;
-  border-color: #85c226;
+  background-color: rgba(133, 194, 38, 0.8);
+  border-color: rgba(133, 194, 38, 0.8);
 }
 .slider .swiper-main .swiper-button-prev::after, .slider .swiper-main .swiper-button-next::after {
   content: none;
@@ -13439,7 +13459,7 @@ p, dl * {
   align-items: center;
 }
 .info-cards .card .card-body .icon, .info-cards .card .card-body .card-title {
-  color: #85c226;
+  color: rgba(133, 194, 38, 0.8);
 }
 .info-cards .card .card-body .icon {
   margin-right: 15px;
@@ -13480,7 +13500,7 @@ p, dl * {
   opacity: 0.3;
 }
 .info-cards .card:hover {
-  background-color: #85c226;
+  background-color: rgba(133, 194, 38, 0.8);
 }
 .info-cards .card:hover .card-body .icon, .info-cards .card:hover .card-body .card-title {
   color: #fff;
@@ -13539,7 +13559,7 @@ p, dl * {
   max-width: 535px;
   width: 100%;
   height: 355px;
-  background-color: #85c226;
+  background-color: rgba(133, 194, 38, 0.8);
   z-index: 1;
 }
 .about .img-block::after {
@@ -13564,7 +13584,7 @@ p, dl * {
 }
 .about dl dt {
   padding-right: 15px;
-  color: #85c226;
+  color: rgba(133, 194, 38, 0.8);
 }
 .about .subtitle {
   font-family: "Arimo";
@@ -13575,17 +13595,6 @@ p, dl * {
   font-weight: 700;
   font-size: 30px;
   color: #212529;
-}
-.about .link {
-  max-width: 150px;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bolder;
-  border: 1px solid #85c226;
-  border-radius: 10px;
 }
 
 .achievements {
@@ -13637,7 +13646,7 @@ p, dl * {
 .achievements .col .count {
   font-size: 44px;
   font-weight: bolder;
-  color: #85c226;
+  color: rgba(133, 194, 38, 0.8);
 }
 .achievements .col .subtext {
   font-family: "Arimo";
@@ -13660,6 +13669,52 @@ p, dl * {
   margin-top: -100px;
   background-image: url("../images/parallax1.jpg");
   background-repeat: no-repeat;
+}
+.offers .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offers .col .icon {
+  margin-bottom: 30px;
+}
+.offers .col .subtext {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.projects {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.projects .container {
+  position: relative;
+  z-index: 1;
+}
+.projects .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  text-align: left;
+}
+.projects .section-header .divider {
+  margin-left: 0;
+}
+.projects .section-header .link {
+  color: #fff;
+  background-color: #212529;
+  border: none;
+}
+.projects::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 745px;
+  width: 100%;
+  height: 850px;
+  background-color: rgba(133, 194, 38, 0.8);
 }
 
 /*# sourceMappingURL=main.css.map */
