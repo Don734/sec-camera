@@ -1,0 +1,99 @@
+.request {
+    height: 170px;
+
+    .container {
+        background-color: $gray-300;
+
+        .wrap {
+            position: relative;
+            top: -85px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 970px;
+            width: 100%;
+            padding: 80px 0;
+            margin: 0 auto;
+            background-color: $white;
+            box-shadow: 0 0 27px rgba($color: $black, $alpha: .14);
+
+            .badge {
+                font-family: 'Arimo';
+                font-weight: normal;
+                font-size: 16px;
+                text-transform: none;
+            }
+
+            .section-title {
+                font-size: 36px;
+                font-weight: bold;
+            }
+
+            .link {
+                font-family: 'Arimo';
+                font-weight: normal;
+                color: $white;
+                background-color: $custom-green;
+                border: none;
+            }
+        }
+    }
+}
+
+.form {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: $gray-900;
+
+    .badge {
+        font-weight: normal;
+        color: $white;
+    }
+
+    .section-title {
+        color: $custom-green;
+    }
+
+    .divider {
+        &::after {
+            background-color: $white;
+        }
+    }
+
+    .features {
+        span {
+            display: block;
+            padding: 25px 0;
+            font-family: 'Arimo';
+            font-weight: bold;
+            color: $white;
+            text-transform: uppercase;
+        }
+
+        .col {
+            .form-check {
+                display: flex;
+                align-items: center;
+            }
+
+            input {
+                width: 30px;
+                height: 30px;
+                margin-right: 40px;
+                border: 1px solid $white;
+                background-color: transparent;
+
+                &:checked {
+                    background-color: $custom-green;
+                    border: 1px solid $custom-green;
+                    outline: none;
+                }
+            }
+
+            label {
+                font-family: 'Arimo';
+                color: $white;
+            }
+        }
+    }
+}
