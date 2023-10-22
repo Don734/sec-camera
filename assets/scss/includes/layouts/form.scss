@@ -96,4 +96,37 @@
             }
         }
     }
+
+    form {
+        label {
+            font-family: 'Arimo';
+            color: $white;
+        }
+        textarea {
+            height: 200px !important;
+            resize: none;
+        }
+
+        input, textarea {
+            border: 1px solid $white;
+            background-color: transparent;
+            border-radius: 10px !important;
+        }
+
+        .btn {
+            max-width: 150px;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            font-family: 'Arimo';
+            font-weight: bold;
+            text-transform: none;
+            background-color: $custom-green;
+            border: 1px solid $custom-green;
+            border-radius: 10px;
+        }
+    }
 }

@@ -13070,7 +13070,7 @@ p, dl * {
   justify-content: center;
   align-items: center;
   font-weight: bolder;
-  border: 1px solid rgba(133, 194, 38, 0.8);
+  border: 1px solid #85c226;
   border-radius: 10px;
 }
 
@@ -13090,7 +13090,7 @@ p, dl * {
 .divider::before {
   left: 0;
   width: 40px;
-  background-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
 }
 .divider::after {
   right: 0;
@@ -13194,7 +13194,7 @@ p, dl * {
 }
 .header .top-bar .col-left::after {
   width: 10px;
-  background-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
 }
 .header .top-bar .col-middle {
   background-color: #fff;
@@ -13224,7 +13224,7 @@ p, dl * {
 }
 .header .top-bar .col-right::after {
   width: 10px;
-  background-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
 }
 .header .top-bar .col-right .btn {
   font-size: 16px;
@@ -13234,7 +13234,7 @@ p, dl * {
   flex: none;
 }
 .header .top-bar .col-right .btn:hover {
-  color: rgba(133, 194, 38, 0.8);
+  color: #85c226;
 }
 .header .top-bar .col-right .dropdown-toggle {
   font-size: 14px;
@@ -13300,7 +13300,7 @@ p, dl * {
 .header .bottom-bar .icon-col .content span {
   font-weight: 500;
   font-size: 20px;
-  color: rgba(133, 194, 38, 0.8);
+  color: #85c226;
 }
 .header .bottom-bar .icon-col .content small, .header .bottom-bar .icon-col .content .small {
   font-family: "Arimo", serif;
@@ -13309,7 +13309,7 @@ p, dl * {
 }
 .header .bottom-bar .navbar {
   height: 70px;
-  background-color: rgba(133, 194, 38, 0.8) !important;
+  background-color: #85c226 !important;
 }
 .header .bottom-bar .navbar .nav-item .nav-link {
   display: flex;
@@ -13359,7 +13359,7 @@ p, dl * {
   bottom: 0;
   width: 25%;
   height: 70px;
-  background-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
 }
 
 .slider {
@@ -13406,7 +13406,7 @@ p, dl * {
   margin-top: 30px;
   font-weight: 500;
   color: #fff;
-  background-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
   border-radius: 10px;
 }
 .slider .swiper-main .swiper-button-prev, .slider .swiper-main .swiper-button-next {
@@ -13420,8 +13420,8 @@ p, dl * {
   background-color: transparent;
 }
 .slider .swiper-main .swiper-button-prev:hover, .slider .swiper-main .swiper-button-next:hover {
-  background-color: rgba(133, 194, 38, 0.8);
-  border-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
+  border-color: #85c226;
 }
 .slider .swiper-main .swiper-button-prev::after, .slider .swiper-main .swiper-button-next::after {
   content: none;
@@ -13459,7 +13459,7 @@ p, dl * {
   align-items: center;
 }
 .info-cards .card .card-body .icon, .info-cards .card .card-body .card-title {
-  color: rgba(133, 194, 38, 0.8);
+  color: #85c226;
 }
 .info-cards .card .card-body .icon {
   margin-right: 15px;
@@ -13500,7 +13500,7 @@ p, dl * {
   opacity: 0.3;
 }
 .info-cards .card:hover {
-  background-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
 }
 .info-cards .card:hover .card-body .icon, .info-cards .card:hover .card-body .card-title {
   color: #fff;
@@ -13559,7 +13559,7 @@ p, dl * {
   max-width: 535px;
   width: 100%;
   height: 355px;
-  background-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
   z-index: 1;
 }
 .about .img-block::after {
@@ -13584,7 +13584,7 @@ p, dl * {
 }
 .about dl dt {
   padding-right: 15px;
-  color: rgba(133, 194, 38, 0.8);
+  color: #85c226;
 }
 .about .subtitle {
   font-family: "Arimo";
@@ -13646,7 +13646,7 @@ p, dl * {
 .achievements .col .count {
   font-size: 44px;
   font-weight: bolder;
-  color: rgba(133, 194, 38, 0.8);
+  color: #85c226;
 }
 .achievements .col .subtext {
   font-family: "Arimo";
@@ -13714,7 +13714,7 @@ p, dl * {
   max-width: 745px;
   width: 100%;
   height: 100%;
-  background-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
 }
 
 .team {
@@ -13759,7 +13759,7 @@ p, dl * {
   border-right: 20px solid transparent;
 }
 .team .col .social-list li a:hover {
-  background-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
 }
 .team .col .img-block {
   width: 100%;
@@ -13784,10 +13784,10 @@ p, dl * {
 .team .col .content .subtext {
   font-family: "Arimo";
   font-weight: bold;
-  color: rgba(133, 194, 38, 0.8);
+  color: #85c226;
 }
 .team .col:hover .content {
-  background-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
 }
 .team .col:hover .content .title {
   color: #fff;
@@ -13829,7 +13829,7 @@ p, dl * {
   font-family: "Arimo";
   font-weight: normal;
   color: #fff;
-  background-color: rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
   border: none;
 }
 
@@ -13843,7 +13843,7 @@ p, dl * {
   color: #fff;
 }
 .form .section-title {
-  color: rgba(133, 194, 38, 0.8);
+  color: #85c226;
 }
 .form .divider::after {
   background-color: #fff;
@@ -13868,13 +13868,67 @@ p, dl * {
   background-color: transparent;
 }
 .form .features .col input:checked {
-  background-color: rgba(133, 194, 38, 0.8);
-  border: 1px solid rgba(133, 194, 38, 0.8);
+  background-color: #85c226;
+  border: 1px solid #85c226;
   outline: none;
 }
 .form .features .col label {
   font-family: "Arimo";
   color: #fff;
+}
+.form form label {
+  font-family: "Arimo";
+  color: #fff;
+}
+.form form textarea {
+  height: 200px !important;
+  resize: none;
+}
+.form form input, .form form textarea {
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 10px !important;
+}
+.form form .btn {
+  max-width: 150px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-family: "Arimo";
+  font-weight: bold;
+  text-transform: none;
+  background-color: #85c226;
+  border: 1px solid #85c226;
+  border-radius: 10px;
+}
+
+.review {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../images/review-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.news {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.news .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  text-align: left;
+}
+.news .section-header .divider {
+  margin-left: 0;
+}
+.news .section-header .link {
+  color: #fff;
+  background-color: #85c226;
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */
