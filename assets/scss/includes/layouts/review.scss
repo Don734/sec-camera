@@ -3,4 +3,48 @@
     padding-bottom: 100px;
     background-image: url('../images/review-bg.jpg');
     background-repeat: no-repeat;
+    overflow: hidden;
+
+    .swiper-wrapper {
+        padding-bottom: 100px;
+    }
+
+    .card {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        padding: 60px 40px;
+        box-shadow: 0 0 25px rgba($color: $black, $alpha: 0.16);
+
+        .img-block {
+            position: absolute;
+            top: 50px;
+            right: -60px;
+            max-width: 130px;
+            width: 100%;
+            height: 130px;
+            background-color: $gray-100;
+            border-radius: 10px;
+        }
+
+        .star-ratings-css {
+            font-size: 16px;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+
+            .card-title {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .card-text {
+                font-family: 'Arimo';
+                color: $gray-600;
+                line-height: 26px;
+            }
+        }
+    }
 }

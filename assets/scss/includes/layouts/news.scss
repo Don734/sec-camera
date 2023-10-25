@@ -18,4 +18,104 @@
             border: none;
         }
     }
+
+    .swiper-wrapper {
+        padding-bottom: 60px;
+    }
+
+    .card {
+        max-width: 370px;
+        width: 100%;
+
+        .img-block {
+            height: 250px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: $gray-200;
+        }
+
+        .card-body {
+            position: relative;
+            padding-top: 45px;
+            padding-bottom: 25px;
+        }
+
+        .badge {
+            position: absolute;
+            top: -15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 30px;
+            font-size: 16px;
+            color: $white;
+            background-color: $gray-900;
+            border-radius: 5px;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-family: 'Arimo';
+            font-size: 16px;
+        }
+
+        .card-footer {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            background-color: transparent;
+            border: none;
+
+            .col {
+                display: flex;
+                align-items: center;
+
+                .user-logo {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 15px;
+                    background-color: $gray-300;
+                    border-radius: 50%;
+                }
+
+                .user-link {
+                    color: $custom-green;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 1px;
+                margin: 0 $card-cap-padding-x;
+                background-color: $gray-400;
+            }
+        }
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        color: $custom-green;
+        border: 1px solid $custom-green;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
 }

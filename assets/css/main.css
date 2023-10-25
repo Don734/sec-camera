@@ -13037,6 +13037,44 @@ p, dl * {
   max-width: 1170px;
 }
 
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+  position: absolute;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  font-size: 22px;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+.swiper .swiper-button-prev:hover, .swiper .swiper-button-next:hover {
+  background-color: #85c226;
+  border-color: #85c226;
+}
+.swiper .swiper-button-prev::after, .swiper .swiper-button-next::after {
+  content: none;
+}
+.swiper .swiper-button-prev {
+  left: 100px;
+}
+.swiper .swiper-button-next {
+  right: 100px;
+}
+.swiper .swiper-pagination {
+  bottom: 0;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 2px;
+  background-color: #212529;
+  border-radius: unset;
+  opacity: 1;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  height: 4px;
+  background-color: #85c226;
+}
+
 .badge {
   padding: 0;
   font-size: 14px;
@@ -13096,6 +13134,31 @@ p, dl * {
   right: 0;
   width: 10px;
   background-color: #000;
+}
+
+.star-ratings-css {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.star-ratings-css .star-ratings-css-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 0%;
+  padding: 0;
+  color: #85c226;
+  overflow: hidden;
+  z-index: 1;
+}
+.star-ratings-css .star-ratings-css-bottom {
+  display: flex;
+  padding: 0;
+  color: #85c226;
 }
 
 @font-face {
@@ -13367,7 +13430,6 @@ p, dl * {
   background-color: #adb5bd;
 }
 .slider .swiper-main {
-  position: relative;
   height: 795px;
 }
 .slider .swiper-main .swiper-slide .swiper-img {
@@ -13408,29 +13470,6 @@ p, dl * {
   color: #fff;
   background-color: #85c226;
   border-radius: 10px;
-}
-.slider .swiper-main .swiper-button-prev, .slider .swiper-main .swiper-button-next {
-  position: absolute;
-  display: flex;
-  width: 80px;
-  height: 80px;
-  color: #fff;
-  font-size: 22px;
-  border: 2px solid #fff;
-  background-color: transparent;
-}
-.slider .swiper-main .swiper-button-prev:hover, .slider .swiper-main .swiper-button-next:hover {
-  background-color: #85c226;
-  border-color: #85c226;
-}
-.slider .swiper-main .swiper-button-prev::after, .slider .swiper-main .swiper-button-next::after {
-  content: none;
-}
-.slider .swiper-main .swiper-button-prev {
-  left: 100px;
-}
-.slider .swiper-main .swiper-button-next {
-  right: 100px;
 }
 
 .info-cards {
@@ -13910,6 +13949,43 @@ p, dl * {
   padding-bottom: 100px;
   background-image: url("../images/review-bg.jpg");
   background-repeat: no-repeat;
+  overflow: hidden;
+}
+.review .swiper-wrapper {
+  padding-bottom: 100px;
+}
+.review .card {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  padding: 60px 40px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.16);
+}
+.review .card .img-block {
+  position: absolute;
+  top: 50px;
+  right: -60px;
+  max-width: 130px;
+  width: 100%;
+  height: 130px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+.review .card .star-ratings-css {
+  font-size: 16px;
+}
+.review .card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.review .card .card-body .card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.review .card .card-body .card-text {
+  font-family: "Arimo";
+  color: #6c757d;
+  line-height: 26px;
 }
 
 .news {
@@ -13929,6 +14005,90 @@ p, dl * {
   color: #fff;
   background-color: #85c226;
   border: none;
+}
+.news .swiper-wrapper {
+  padding-bottom: 60px;
+}
+.news .card {
+  max-width: 370px;
+  width: 100%;
+}
+.news .card .img-block {
+  height: 250px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #e9ecef;
+}
+.news .card .card-body {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 25px;
+}
+.news .card .badge {
+  position: absolute;
+  top: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 5px;
+}
+.news .card .card-title {
+  font-weight: bold;
+}
+.news .card .card-text {
+  font-family: "Arimo";
+  font-size: 16px;
+}
+.news .card .card-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+}
+.news .card .card-footer .col {
+  display: flex;
+  align-items: center;
+}
+.news .card .card-footer .col .user-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  background-color: #dee2e6;
+  border-radius: 50%;
+}
+.news .card .card-footer .col .user-link {
+  color: #85c226;
+}
+.news .card .card-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  margin: 0 1rem;
+  background-color: #ced4da;
+}
+.news .swiper-button-prev, .news .swiper-button-next {
+  color: #85c226;
+  border: 1px solid #85c226;
+}
+.news .swiper-button-prev:hover, .news .swiper-button-next:hover {
+  color: #fff;
+}
+.news .swiper-button-prev {
+  left: 0;
+}
+.news .swiper-button-next {
+  right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
