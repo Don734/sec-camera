@@ -14078,11 +14078,13 @@ p, dl * {
   background-color: #ced4da;
 }
 .news .swiper-button-prev, .news .swiper-button-next {
-  color: #85c226;
-  border: 1px solid #85c226;
+  color: #6c757d;
+  border: 1px solid #6c757d;
 }
 .news .swiper-button-prev:hover, .news .swiper-button-next:hover {
-  color: #fff;
+  color: #85c226;
+  border: 1px solid #85c226;
+  background-color: transparent;
 }
 .news .swiper-button-prev {
   left: 0;

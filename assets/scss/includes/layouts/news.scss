@@ -103,11 +103,13 @@
     }
 
     .swiper-button-prev, .swiper-button-next {
-        color: $custom-green;
-        border: 1px solid $custom-green;
+        color: $gray-600;
+        border: 1px solid $gray-600;
 
         &:hover {
-            color: $white;
+            color: $custom-green;
+            border: 1px solid $custom-green;
+            background-color: transparent;
         }
     }
 
