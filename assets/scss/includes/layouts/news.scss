@@ -2,6 +2,10 @@
     padding-top: 100px;
     padding-bottom: 100px;
 
+    .container {
+        position: relative;
+    }
+
     .section-header {
         display: flex;
         justify-content: space-between;
@@ -24,8 +28,7 @@
     }
 
     .card {
-        max-width: 370px;
-        width: 100%;
+        box-shadow: 0 0 15px rgba($color: $black, $alpha: 0.11);
 
         .img-block {
             height: 250px;
@@ -103,6 +106,8 @@
     }
 
     .swiper-button-prev, .swiper-button-next {
+        width: 100px;
+        height: 100px;
         color: $gray-600;
         border: 1px solid $gray-600;
 
@@ -114,10 +119,10 @@
     }
 
     .swiper-button-prev {
-        left: 0;
+        left: -150px;
     }
 
     .swiper-button-next {
-        right: 0;
+        right: -150px;
     }
 }

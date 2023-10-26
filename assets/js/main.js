@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mainSlider();
     reviewSlider();
     newsSlider();
+    partnersSlider();
 })
 
 function mainSlider() {
@@ -58,6 +59,29 @@ function newsSlider() {
             992: {
                 slidesPerView: 3,
                 spaceBetween: 20,
+            },
+        }
+    };
+    const swiper = new Swiper(swiperContainer, swiperOptions);
+}
+
+function partnersSlider() {
+    let swiperContainer = '.swiper-partner';
+    let swiperOptions = {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        clickable: true,
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 4,
             },
         }
     };

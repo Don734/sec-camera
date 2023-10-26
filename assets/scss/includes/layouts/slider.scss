@@ -1,6 +1,7 @@
 .slider {
-    overflow: hidden;
+    position: relative;
     background-color: $gray-500;
+    overflow: hidden;
 
     .swiper-main {
         height: 795px;
