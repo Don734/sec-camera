@@ -109,6 +109,11 @@ p, dl * {
     font-weight: bolder;
     border: 1px solid $custom-green;
     border-radius: 10px;
+
+    &:hover {
+        color: $white;
+        background-color: $custom-green;
+    }
 }
 
 .divider {
