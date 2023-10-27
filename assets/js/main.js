@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     reviewSlider();
     newsSlider();
     partnersSlider();
+    bigAndThumbSlider();
 })
 
 function mainSlider() {
@@ -86,4 +87,22 @@ function partnersSlider() {
         }
     };
     const swiper = new Swiper(swiperContainer, swiperOptions);
+}
+
+function bigAndThumbSlider() {
+    let swiperBigContainer = '.swiper-big';
+    let swiperThumbContainer = '.swiper-thumbs';
+    let swiperThumb = new Swiper(swiperThumbContainer, {
+        direction: 'vertical',
+        spaceBetween: 15,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    let swiperBig = new Swiper(swiperBigContainer, {
+        spaceBetween: 10,
+        thumbs: {
+          swiper: swiperThumb,
+        },
+    });
 }

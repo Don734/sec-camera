@@ -18,7 +18,6 @@
             box-shadow: 0 0 27px rgba($color: $black, $alpha: .14);
 
             .badge {
-                font-family: 'Arimo';
                 font-weight: normal;
                 font-size: 16px;
                 text-transform: none;
@@ -30,7 +29,6 @@
             }
 
             .link {
-                font-family: 'Arimo';
                 font-weight: normal;
                 color: $white;
                 background-color: $custom-green;
@@ -64,7 +62,6 @@
         span {
             display: block;
             padding: 25px 0;
-            font-family: 'Arimo';
             font-weight: bold;
             color: $white;
             text-transform: uppercase;
@@ -91,7 +88,6 @@
             }
 
             label {
-                font-family: 'Arimo';
                 color: $white;
             }
         }
@@ -99,7 +95,6 @@
 
     form {
         label {
-            font-family: 'Arimo';
             color: $white;
         }
         textarea {
@@ -121,7 +116,6 @@
             justify-content: center;
             align-items: center;
             margin-top: 40px;
-            font-family: 'Arimo';
             font-weight: bold;
             text-transform: none;
             background-color: $custom-green;

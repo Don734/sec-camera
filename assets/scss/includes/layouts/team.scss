@@ -13,6 +13,18 @@
             bottom: 0;
             left: 0;
             right: 0;
+
+            &:hover ~ .content {
+                background-color: $custom-green;
+
+                .title {
+                    color: $white;
+                }
+
+                .subtext {
+                    color: $gray-900;
+                }
+            }
         }
 
         .social-list {
@@ -72,23 +84,8 @@
             }
 
             .subtext {
-                font-family: 'Arimo';
                 font-weight: bold;
                 color: $custom-green;
-            }
-        }
-
-        &:hover {
-            .content {
-                background-color: $custom-green;
-
-                .title {
-                    color: $white;
-                }
-
-                .subtext {
-                    color: $gray-900;
-                }
             }
         }
     }

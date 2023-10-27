@@ -1,14 +1,3 @@
-@mixin arimo-font($type, $weight) {
-    $url: "./fonts/Arimo/Arimo-#{$type}";
-    @font-face {
-        font-family: 'Arimo';
-        src: url("#{$url}.woff") format("woff"),
-            url("#{$url}.woff2") format("woff2"),
-            url("#{$url}.ttf") format("truetype");
-        font-weight: $weight;
-    }
-}
-
 @mixin montserrat-font($type, $weight) {
     $url: "./fonts/Montserrat/Montserrat-#{$type}";
     @font-face {
