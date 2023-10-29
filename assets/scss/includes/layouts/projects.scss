@@ -1,7 +1,5 @@
 .projects {
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
 
     .container {
         position: relative;
@@ -25,8 +23,65 @@
         }
     }
 
+    .card {
+        background-color: transparent;
+        border: none;
+
+        .card-badge {
+            font-weight: bold;
+            font-size: 16px;
+            color: $custom-green;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            font-weight: bold;
+            color: $gray-600;
+        }
+
+        .card-text {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-size: 16px;
+            line-height: 30px;
+
+            @include media-breakpoint-up(md) {
+                padding-bottom: 60px;
+            }
+        }
+
+        .link {
+            font-weight: bold;
+            color: $custom-green;
+            border: 1px solid $gray-900;
+
+            &:hover {
+                color: $white;
+                border: none;
+            }
+        }
+    }
+
+    .swiper-projects {
+        .swiper-wrapper {
+            padding-bottom: 45px;
+
+            @include media-breakpoint-up(md) {
+                padding-bottom: 75px;
+            }
+        }
+
+        .swiper-pagination {
+            text-align: left;
+        }
+    }
+
     .swiper-big {
-        margin-left: 15px;
+        margin-top: 15px;
         max-width: 520px;
         width: 100%;
         height: 480px;
@@ -41,13 +96,16 @@
                 object-fit: cover;
             }
         }
+
+        @include media-breakpoint-up(md) {
+            margin-top: 0;
+            margin-left: 15px;
+        }
     }
 
     .swiper-thumbs {
-        margin-right: 15px;
-        max-width: 110px;
         width: 100%;
-        height: 480px;
+        margin-bottom: 15px;
 
         .swiper-slide {
             height: 110px !important;
@@ -62,6 +120,13 @@
                     object-fit: cover;
                 }
             }
+        }
+
+        @include media-breakpoint-up(md) {
+            max-width: 110px;
+            height: 480px;
+            margin-right: 15px;
+            margin-bottom: 0;
         }
     }
 
@@ -83,11 +148,15 @@
     &::after {
         content: '';
         position: absolute;
-        top: 0;
+        bottom: 0;
         right: 0;
         max-width: 745px;
         width: 100%;
-        height: 100%;
+        height: 45%;
         background-color: $custom-green;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 100%;
     }
 }

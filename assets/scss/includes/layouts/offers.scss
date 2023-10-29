@@ -1,9 +1,9 @@
 .offers {
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 150px;
     margin-top: -100px;
     background-image: url('../images/parallax1.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 
     .col {
         display: flex;
@@ -15,8 +15,16 @@
         }
 
         .subtext {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
+
+            @include media-breakpoint-up(md) {
+                font-size: 18px;
+            }
         }
+    }
+
+    @include media-breakpoint-up(md) {
+        padding-top: 200px;
     }
 }

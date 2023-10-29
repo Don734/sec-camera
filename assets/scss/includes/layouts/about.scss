@@ -6,6 +6,7 @@
         position: relative;
         max-width: 535px;
         height: 678px;
+        margin-top: 30px;
         
         .bg-overlay {
             position: relative;
@@ -14,12 +15,15 @@
             width: 100%;
             height: 100%;
             background-color: $gray-200;
+            background-image: url('../images/about-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
             z-index: 2;
         }
 
         .play-video {
             position: absolute;
-            left: 235px;
+            left: 35px;
             bottom: -35px;
             width: 70px;
             height: 70px;
@@ -28,6 +32,10 @@
             background-color: $gray-700;
             border-radius: 0;
             z-index: 2;
+
+            @include media-breakpoint-up(md) {
+                left: 235px;
+            }
         }
 
         .preview {
@@ -37,6 +45,10 @@
             width: 165px;
             height: 165px;
             background-color: $gray-700;
+            background-image: url('../images/home-about-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             z-index: 2;
         }
 
@@ -62,6 +74,10 @@
             width: 100%;
             height: 505px;
             background-image: url('../images/about-bg.png');
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-top: 0;
         }
     }
 

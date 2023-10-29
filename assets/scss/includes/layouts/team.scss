@@ -1,11 +1,19 @@
 .team {
-    padding-top: 100px;
     padding-bottom: 200px;
+
+    .swiper-wrapper {
+        padding-left: 50px;
+        padding-bottom: 30px;
+
+        .swiper-slide {
+            max-width: 320px;
+            width: 100% !important;
+        }
+    }
 
     .col {
         position: relative;
         padding: 0;
-        max-width: 320px;
 
         a {
             position: absolute;
@@ -66,6 +74,13 @@
             height: 375px;
             margin-bottom: 2px;
             background-color: $gray-300;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
         }
 
         .content {
