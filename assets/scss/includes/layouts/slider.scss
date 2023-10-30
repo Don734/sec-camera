@@ -67,10 +67,10 @@
 
     .swiper-button-prev, .swiper-button-next {
         top: auto;
-        bottom: 85px;
+        bottom: 95px;
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         .swiper-main {
             .swiper-slide {
                 .swiper-content {

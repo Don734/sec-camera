@@ -71,7 +71,7 @@ section {
         }
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         .swiper-button-prev {
             left: 100px;
         }
@@ -79,6 +79,12 @@ section {
         .swiper-button-next {
             right: 100px;
         }
+    }
+}
+
+.bar {
+    @include media-breakpoint-up(lg) {
+        display: none;
     }
 }
 

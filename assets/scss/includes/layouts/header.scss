@@ -33,7 +33,7 @@
                     width: 10%;
                     height: 100%;
                     top: 0;
-                    right: -15px;
+                    right: 0;
                     transform-origin: bottom left;
                     -ms-transform: skew(-20deg, 0deg);
                     -webkit-transform: skew(-20deg, 0deg);
@@ -47,6 +47,12 @@
                 &::after {
                     width: 10px;
                     background-color: $custom-green;
+                }
+            }
+
+            @include media-breakpoint-up(lg) {
+                &::after, &::before {
+                    right: -15px;
                 }
             }
         }
@@ -63,27 +69,35 @@
             align-items: center;
             background-color: $gray-900;
 
-            &::after, &::before {
-                content: '';
-                position: absolute;
-                display: block;
-                width: 10%;
-                height: 100%;
-                top: 0;
-                left: -15px;
-                transform-origin: bottom right;
-                -ms-transform: skew(20deg, 0deg);
-                -webkit-transform: skew(20deg, 0deg);
-                transform: skew(20deg, 0deg);
+            @include media-breakpoint-up(md) {
+                &::after, &::before {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 10%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    transform-origin: bottom right;
+                    -ms-transform: skew(20deg, 0deg);
+                    -webkit-transform: skew(20deg, 0deg);
+                    transform: skew(20deg, 0deg);
+                }
+    
+                &::before {
+                    background-color: $gray-900;
+                }
+    
+                &::after {
+                    width: 10px;
+                    background-color: $custom-green;
+                }
             }
 
-            &::before {
-                background-color: $gray-900;
-            }
-
-            &::after {
-                width: 10px;
-                background-color: $custom-green;
+            @include media-breakpoint-up(lg) {
+                &::after, &::before {
+                    left: -15px;
+                }
             }
 
             .btn {
@@ -207,7 +221,7 @@
                 }
             }
 
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(lg) {
                 display: flex;
             }
         }
@@ -271,12 +285,12 @@
                 text-transform: uppercase;
             }
 
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-up(lg) {
                 display: flex;
             }
         }
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             &::before {
                 content: '';
                 position: absolute;
