@@ -150,13 +150,15 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        max-width: 745px;
         width: 100%;
         height: 45%;
         background-color: $custom-green;
     }
 
-    @include media-breakpoint-up(md) {
-        height: 100%;
+    @include media-breakpoint-up(lg) {
+        &::after {
+            max-width: 745px;
+            height: 100%;
+        }
     }
 }

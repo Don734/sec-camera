@@ -1,4 +1,4 @@
-.header {
+.header, .top-secondary {
     .top-bar {
         position: relative;
         display: flex;
@@ -200,14 +200,14 @@
 
             .icon {
                 height: 40px;
-                font-size: 36px;
+                font-size: 26px;
             }
 
             .content {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding-left: 20px;
+                padding-left: 10px;
 
                 span {
                     font-weight: 500;
@@ -221,15 +221,37 @@
                 }
             }
 
-            @include media-breakpoint-up(lg) {
+            @include media-breakpoint-up(md) {
                 display: flex;
+
+                .content {
+                    span {
+                        font-size: 16px;
+                    }
+
+                    small {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            @include media-breakpoint-up(lg) {
+                .icon {
+                    font-size: 36px;
+                }
+
+                .content {
+                    padding-left: 20px;
+                }
             }
         }
 
         .navbar {
-            display: none;
+            flex-direction: row-reverse;
+            padding: 0;
             height: 70px;
             background-color: $custom-green !important;
+            z-index: 3;
 
             .nav-item {
                 .nav-link {
@@ -237,7 +259,7 @@
                     justify-content: center;
                     align-items: center;
                     height: 100%;
-                    padding: 0 35px;
+                    padding: 15px;
                     font-size: 15px;
                     letter-spacing: 0.36px;
                     color: $white;
@@ -255,7 +277,7 @@
                 .search-link {
                     width: 40px;
                     height: 40px;
-                    padding: 0;
+                    padding: 0 !important;
                     border: 1px dashed $black;
                     border-radius: 50%;
                 }
@@ -263,8 +285,6 @@
                 .basket-link {
                     font-size: 26px;
                 }
-
-                
 
                 &:first-of-type {
                     .nav-link {
@@ -278,28 +298,99 @@
                 align-items: center;
                 justify-content: center;
                 font-weight: bold;
-                width: 280px;
+                width: 140px;
                 height: 70px;
                 color: $white;
                 background-color: $black;
                 text-transform: uppercase;
+
+                @include media-breakpoint-up(md) {
+                    width: 280px;
+                }
+
+                &:hover {
+                    color: $black;
+                    background-color: $custom-green;
+                    border: 2px solid $black;
+                }
             }
 
-            @include media-breakpoint-up(lg) {
-                display: flex;
+            .container-fluid {
+                width: auto;
+                margin-right: 0;
             }
+
+            .navbar-collapse {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: $custom-green;
+
+                @include media-breakpoint-up(lg) {
+                    position: static;
+                }
+            }
+
+            .tab-nav {
+                flex-direction: row;
+
+                .nav-link {
+                    margin: 0 5px;
+                    padding: 0 15px;
+                }
+            }
+        }
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 25%;
+            height: 70px;
+            background-color: $custom-green;
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
         }
 
         @include media-breakpoint-up(lg) {
-            &::before {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 25%;
-                height: 70px;
-                background-color: $custom-green;
+            .navbar {
+                flex-direction: row;
+
+                .container-fluid {
+                    margin-right: auto;
+                    margin-left: 0;
+                }
+
+                .nav-item {
+                    .nav-link {
+                        padding: 0 40px;
+                    }
+                }
+            }
+
+            &::after {
+                display: none;
             }
         }
+    }
+}
+
+.top-secondary {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    background-color: $white;
+    z-index: 1000;
+    transition: .7s ease;
+
+    &.fixed {
+        top: 0;
     }
 }

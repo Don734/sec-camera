@@ -1,14 +1,11 @@
 .info-cards {
     position: relative;
     padding: 0;
-    top: -80px;
+    margin-top: -80px;
     z-index: 2;
 
     .card {
         position: relative;
-        max-width: 370px;
-        width: 100%;
-        height: 160px;
         border: none;
         box-shadow: 0 0 49px rgba($color: $black, $alpha: 0.13);
         overflow: hidden;
@@ -23,15 +20,18 @@
 
         .card-body {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
+            text-align: center;
 
             .icon, .card-title {
                 color: $custom-green;
             }
 
             .icon {
-                margin-right: 15px;
-                font-size: 72px;
+                margin-bottom: 15px;
+                font-size: 24px;
 
                 i {
                     display: flex;
@@ -42,14 +42,7 @@
                 .card-title, .card-text {
                     margin: 0;
                     font-weight: 700;
-                }
-
-                .card-title {
-                    font-size: 16px;
-                }
-    
-                .card-text {
-                    font-size: 22px;
+                    white-space: nowrap;
                 }
             }
         }
@@ -75,10 +68,10 @@
         &::after {
             content: '';
             position: absolute;
-            width: 118px;
-            height: 118px;
-            right: -10%;
-            bottom: -10px;
+            width: 40px;
+            height: 40px;
+            right: -5%;
+            bottom: -5px;
             background-repeat: no-repeat;
             background-size: cover;
             opacity: .3;
@@ -96,6 +89,62 @@
             &::after {
                 filter: invert(1);
                 opacity: .5;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            max-width: 230px;
+            width: 100%;
+
+            .card-body {
+                flex-direction: row;
+                justify-content: unset;
+                text-align: left;
+
+                .icon {
+                    margin-right: 15px;
+                    margin-bottom: 0;
+                    font-size: 40px;
+                }
+
+                .content {
+                    .card-text {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &::after {
+                width: 68px;
+                height: 68px;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-width: 370px;
+            height: 160px;
+
+            .card-body {
+                .icon {
+                    font-size: 72px;
+                }
+
+                .content {
+                    .card-title {
+                        font-size: 16px;
+                    }
+
+                    .card-text {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            &::after {
+                width: 118px;
+                height: 118px;
+                right: -10%;
+                bottom: -10px;
             }
         }
     }

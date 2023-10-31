@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     newsSlider();
     partnersSlider();
     bigAndThumbSlider();
+    fixNavbar();
 })
 
 function mainSlider() {
@@ -141,4 +142,16 @@ function bigAndThumbSlider() {
           swiper: swiperThumb,
         },
     });
+}
+
+function fixNavbar() {
+    const header = document.querySelector('.header').offsetHeight;
+    const top_secondary = document.querySelector('.top-secondary');
+    document.addEventListener('scroll', function (e) {
+        if (window.pageYOffset >= header) {
+            top_secondary.classList.add('fixed');
+        } else {
+            top_secondary.classList.remove('fixed');
+        }
+    })
 }

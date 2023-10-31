@@ -1,6 +1,7 @@
 .review {
     background-image: url('../images/review-bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
 
     .swiper-wrapper {
@@ -59,7 +60,7 @@
         }
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         .card {
             .img-block {
                 position: absolute;

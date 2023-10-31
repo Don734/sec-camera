@@ -82,9 +82,138 @@ section {
     }
 }
 
-.bar {
-    @include media-breakpoint-up(lg) {
+.page-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .page-title {
+        font-size: 48px;
+        font-weight: bold;
+        color: $white;
+    }
+
+    .breadcrumb-list {
+        display: flex;
+        justify-content: center;
+
+        .breadcrumb-item {
+            font-weight: bold;
+            color: $white;
+
+            .breadcrumb-link {
+                color: $white;
+            }
+
+            &.active {
+                color: $custom-green;
+            }
+
+            &::before {
+                padding: 0 5px;
+                color: $white;
+            }
+        }
+    }
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &::before {
+        background-color: rgba($color: $black, $alpha: 0.8);
+        z-index: 1;
+    }
+
+    &::after {
+        background-image: url('../images/page-header-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.navbar-collapse {
+    &.show ~ .navbar-toggler {
+        .navbar-toggler-icon {
+            display: none;
+        }
+
+        &::before {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    
+        &::after {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+    & ~ .navbar-toggler {
+        .navbar-toggler-icon {
+            display: block;
+        }
+
+        &::before {
+            top: 8px;
+            transform: rotate(0) translateX(-50%);
+        }
+    
+        &::after {
+            bottom: 8px;
+            transform: rotate(0) translateX(-50%);
+        }
+    }
+}
+
+.navbar-toggler {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    outline: unset !important;
+    border: none;
+    box-shadow: unset !important;
+
+    .navbar-toggler-icon {
         display: none;
+        position: absolute;
+        top: 50%;
+        height: 3px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 3px;
+        background-image: unset;
+        background-color: $white;
+    }
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 1.5em;
+        height: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $white;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .navbar-toggler-icon {
+            display: none;
+        }
     }
 }
 
