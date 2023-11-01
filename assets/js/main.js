@@ -39,13 +39,13 @@ function projectSlider() {
 }
 
 function teamSlider() {
-    let swiperContainer = '.team .swiper-team';
+    let swiperContainer = '.swiper-team';
     let swiperOptions = {
         pagination: {
             el: '.swiper-pagination',
         },
         slidesPerView: 'auto',
-        spaceBetween: 55,
+        spaceBetween: 135,
         freeMode: true,
         clickable: true,
     };
@@ -72,14 +72,14 @@ function reviewSlider() {
 }
 
 function newsSlider() {
-    let swiperContainer = '.news .swiper-news';
+    let swiperContainer = '.swiper-news';
     let swiperOptions = {
         pagination: {
             el: '.swiper-pagination',
         },
         navigation: {
-            nextEl: '.news .swiper-button-next',
-            prevEl: '.news .swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
         slidesPerView: 1,
         spaceBetween: 20,
@@ -99,11 +99,11 @@ function newsSlider() {
 }
 
 function partnersSlider() {
-    let swiperContainer = '.partners .swiper-partner';
+    let swiperContainer = '.swiper-partner';
     let swiperOptions = {
         navigation: {
-            nextEl: '.partners .swiper-button-next',
-            prevEl: '.partners .swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
         loop: true,
         slidesPerView: 2,
