@@ -141,7 +141,7 @@
                     <div class="col">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">You Need Job?</h5>
+                                <h5 class="card-title">You Need<br />Job?</h5>
                                 <a class="contact-link" href="#contact">Contact Us</a>
                             </div>
                         </div>
@@ -176,10 +176,43 @@
             </div>
         </section>
         <section class="contact-form" id="contact">
-            <div class="section-header">
-                <div class="badge">Contact With us</div>
-                <h3 class="section-title">Get in Touch Now</h3>
-                <hr class="divider">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Contact With us</div>
+                    <h3 class="section-title">Get in Touch Now</h3>
+                    <hr class="divider">
+                </div>
+                <form action="">
+                    <div class="row g-3">
+                        <div class="input-group">
+                            <div class="form-floating mb-3 me-2">
+                                <input class="form-control" type="text" id="name" placeholder="Name">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-floating mb-3 ms-2">
+                                <input class="form-control" type="email" id="email" placeholder="Email">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="form-floating mb-3 me-2">
+                                <input class="form-control" type="text" id="phone" placeholder="Phone">
+                                <label for="phone">Phone</label>
+                            </div>
+                            <div class="form-floating mb-3 ms-2">
+                                <input class="form-control" type="text" id="subject" placeholder="Subject">
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="form-floating text">
+                            <textarea class="form-control" placeholder="Your Text Massage" id="msg"></textarea>
+                            <label for="msg">Your Text Massage</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-primary btn-block" type="submit">Contact Us</button>
+                    </div>
+                </form>
             </div>
         </section>
         <section class="map">
