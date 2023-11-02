@@ -247,8 +247,11 @@
     .form-floating {
         max-width: 470px;
         width: 100%;
-        height: 60px !important;
-        border-radius: 8px !important;
+        
+        input {
+            height: 60px !important;
+            border-radius: 8px !important;
+        }
     }
 
     .form-floating.text {
@@ -262,5 +265,21 @@
             height: 100%;
             border-radius: 8px !important;
         }
+    }
+
+    .btn {
+        max-width: 150px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 40px;
+        font-weight: bold;
+        text-transform: none;
+        background-color: $custom-green;
+        border: 1px solid $custom-green;
+        border-radius: 10px;
     }
 }
