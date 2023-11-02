@@ -100,7 +100,7 @@ section {
         color: $white;
     }
 
-    .breadcrumb-list {
+    .breadcrumb {
         display: flex;
         justify-content: center;
 
@@ -108,7 +108,7 @@ section {
             font-weight: bold;
             color: $white;
 
-            .breadcrumb-link {
+            a {
                 color: $white;
             }
 

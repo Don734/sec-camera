@@ -11991,21 +11991,21 @@ section {
   font-weight: bold;
   color: #fff;
 }
-.page-header .breadcrumb-list {
+.page-header .breadcrumb {
   display: flex;
   justify-content: center;
 }
-.page-header .breadcrumb-list .breadcrumb-item {
+.page-header .breadcrumb .breadcrumb-item {
   font-weight: bold;
   color: #fff;
 }
-.page-header .breadcrumb-list .breadcrumb-item .breadcrumb-link {
+.page-header .breadcrumb .breadcrumb-item a {
   color: #fff;
 }
-.page-header .breadcrumb-list .breadcrumb-item.active {
+.page-header .breadcrumb .breadcrumb-item.active {
   color: #85c226;
 }
-.page-header .breadcrumb-list .breadcrumb-item::before {
+.page-header .breadcrumb .breadcrumb-item::before {
   padding: 0 5px;
   color: #fff;
 }
