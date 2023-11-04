@@ -13033,6 +13033,10 @@ p, dl * {
   padding: 0;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: bold;
+}
+
 section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -14942,6 +14946,68 @@ section {
   background-color: #ffffff;
   opacity: 0.13;
   background: repeating-linear-gradient(-45deg, #000000, #000000 2px, #ffffff 2px, #ffffff 10px);
+}
+.service .content .img-block {
+  position: relative;
+  height: 500px;
+  margin-bottom: 45px;
+}
+.service .content .img-block img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.service .content .img-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #e9ecef;
+}
+.service .content .service-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.service .content .subtitle {
+  color: #85c226;
+  font-size: 16px;
+  font-weight: bold;
+}
+.service .content p {
+  margin: 30px 0;
+  color: #6c757d;
+  line-height: 30px;
+}
+.service .content .nav-tabs {
+  margin-top: 60px;
+}
+.service .content .nav-tabs .nav-item {
+  margin: 0 2.5px;
+}
+.service .content .nav-tabs .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  background-color: #e9ecef;
+  border-radius: 0;
+}
+.service .content .nav-tabs .nav-item .nav-link.active, .service .content .nav-tabs .nav-item .nav-link:hover {
+  color: #85c226;
+  background-color: transparent;
+}
+.service .content .nav-tabs .nav-item:first-of-type {
+  margin-left: 0;
+}
+.service .content .tab-content {
+  padding: 35px 25px;
+  color: #6c757d;
+  border: 1px solid var(--bs-border-color);
+  border-top: none;
+  line-height: 30px;
 }
 
 .footer .top {

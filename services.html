@@ -75,16 +75,8 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="./about.html">About Us</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link active dropdown-toggle" href="./services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Services
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./services.html">Services</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./blog.html">Blog</a>
@@ -128,81 +120,149 @@
         </section>
         <section class="service">
             <div class="container">
-                <div class="col-md-4">
-                    <ul class="nav flex-column service-menu">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Network Video Recorder</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Fire Alarm System</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Gate Automation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home Automation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Burgular / Intruder Alarm</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Video Door Phone</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CCTV Equipments</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Access Control System</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Public Address System</a>
-                        </li>
-                    </ul>
-                    <p class="subtitle">Download Brochures</p>
-                    <ul class="nav flex-column file-menu">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#"><span class="icon"><i class="bi bi-file-earmark-pdf"></i></span> Project-One.pdf</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#"><span class="icon"><i class="bi bi-file-earmark-word"></i></span> Project-One.wd</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#"><span class="icon"><i class="bi bi-file-ppt"></i></span> Project-One.ppt</a>
-                        </li>
-                    </ul>
-                    <div class="card card-form">
-                        <div class="card-header">
-                            <h5 class="card-title">Quick Contact</h5>
-                            <p class="card-text">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus eo.</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="nav flex-column service-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Network Video Recorder</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fire Alarm System</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gate Automation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home Automation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Burgular / Intruder Alarm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Video Door Phone</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CCTV Equipments</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Access Control System</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Public Address System</a>
+                            </li>
+                        </ul>
+                        <p class="subtitle">Download Brochures</p>
+                        <ul class="nav flex-column file-menu">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#"><span class="icon"><i class="bi bi-file-earmark-pdf"></i></span> Project-One.pdf</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"><span class="icon"><i class="bi bi-file-earmark-word"></i></span> Project-One.wd</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"><span class="icon"><i class="bi bi-file-ppt"></i></span> Project-One.ppt</a>
+                            </li>
+                        </ul>
+                        <div class="card card-form">
+                            <div class="card-header">
+                                <h5 class="card-title">Quick Contact</h5>
+                                <p class="card-text">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus eo.</p>
+                            </div>
+                            <div class="card-body">
+                                <form class="quick-form" action="">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="Your Name">
+                                        <label for="floatingInput">Your Name</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="Email Address">
+                                        <label for="floatingInput">Email Address</label>
+                                    </div>
+                                    <select class="form-select mb-3" aria-label="Large select example">
+                                        <option selected>Select Service</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
+                                        <label for="floatingTextarea2">Your Message</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-primary mb-3">Send Now</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <form class="quick-form" action="">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Your Name">
-                                    <label for="floatingInput">Your Name</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="content">
+                            <div class="img-block">
+                                <img src="./assets/images/projects/img1.jpg" alt="">
+                            </div>
+                            <h3 class="service-title">Home Automation</h3>
+                            <span class="subtitle">Monitor and control your home’s devices with enhanced smartphone accessibility</span>
+                            <p>
+                                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. 
+                                Donec vitae sapien ut libero venenatis faucibus. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+                                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra 
+                                quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+
+                                Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. In enim justo, 
+                                rhoncus ut, imperdiet a, venenatis vitae, justo.
+                            </p>
+                            <h4>Is Home Automation?</h4>
+                            <p>
+                                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra 
+                                quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Aenean leo ligula, porttitor eu, consequ
+                                at vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra 
+                                nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                            </p>
+                            <ul>
+                                <li></li>
+                            </ul>
+                            <div class="features">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="precautions-tab" data-bs-toggle="tab" data-bs-target="#precautions" type="button" role="tab" aria-controls="precautions" aria-selected="true">Precautions</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="intelligence-tab" data-bs-toggle="tab" data-bs-target="#intelligence" type="button" role="tab" aria-controls="intelligence" aria-selected="false">Intelligence</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="specializations-tab" data-bs-toggle="tab" data-bs-target="#specializations" type="button" role="tab" aria-controls="specializations" aria-selected="false">Specializations</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="precautions" role="tabpanel" aria-labelledby="precautions-tab" tabindex="0">
+                                        Processing and refining operatons turn crude oil and gas into marktable products. In the case of crude 
+                                        oil, these products include heating oil, gasoline for use in vehicles, jet fuel, and diesel oil. Oil refining 
+                                        processes include dis-catalytic cracking, alkylation, isomerization and hydrotreating.
+                                        Again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but 
+                                        seds because occasionally circumstances occur in which toil and pain can procure him some 
+                                        great pleasure.
+                                    </div>
+                                    <div class="tab-pane fade" id="intelligence" role="tabpanel" aria-labelledby="intelligence-tab" tabindex="0">
+                                        Processing and refining operatons turn crude oil and gas into marktable products. In the case of crude 
+                                        oil, these products include heating oil, gasoline for use in vehicles, jet fuel, and diesel oil. Oil refining 
+                                        processes include dis-catalytic cracking, alkylation, isomerization and hydrotreating.
+                                        Again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but 
+                                        seds because occasionally circumstances occur in which toil and pain can procure him some 
+                                        great pleasure.
+                                    </div>
+                                    <div class="tab-pane fade" id="specializations" role="tabpanel" aria-labelledby="specializations-tab" tabindex="0">
+                                        Processing and refining operatons turn crude oil and gas into marktable products. In the case of crude 
+                                        oil, these products include heating oil, gasoline for use in vehicles, jet fuel, and diesel oil. Oil refining 
+                                        processes include dis-catalytic cracking, alkylation, isomerization and hydrotreating.
+                                        Again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but 
+                                        seds because occasionally circumstances occur in which toil and pain can procure him some 
+                                        great pleasure.
+                                    </div>
                                 </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="Email Address">
-                                    <label for="floatingInput">Email Address</label>
-                                </div>
-                                <select class="form-select mb-3" aria-label="Large select example">
-                                    <option selected>Select Service</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
-                                    <label for="floatingTextarea2">Your Message</label>
-                                </div>
-                                <div class="col-auto">
-                                    <button type="submit" class="btn btn-primary mb-3">Send Now</button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8"></div>
             </div>
         </section>
         <section class="partners">
