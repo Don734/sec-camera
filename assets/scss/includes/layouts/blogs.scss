@@ -252,6 +252,47 @@
         .card-body {
             padding-bottom: 40px;
 
+            blockquote {
+                position: relative;
+                padding: 25px 40px;
+                font-size: 18px;
+                font-weight: bold;
+                font-style: italic;
+                line-height: 36px;
+                color: $gray-600;
+                background-color: $gray-100;
+
+                .author {
+                    position: relative;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $gray-900;
+                    text-align: right;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        right: 20%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 40px;
+                        height: 3px;
+                        padding-right: 20px;
+                        background-color: $custom-green;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 6px;
+                    background-color: $custom-green;
+                }
+            }
+
             p {
                 margin: 30px 0;
                 color: $gray-600;

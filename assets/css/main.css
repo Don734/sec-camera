@@ -13747,6 +13747,43 @@ section {
 .blog-detail .card .card-body {
   padding-bottom: 40px;
 }
+.blog-detail .card .card-body blockquote {
+  position: relative;
+  padding: 25px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 36px;
+  color: #6c757d;
+  background-color: #f8f9fa;
+}
+.blog-detail .card .card-body blockquote .author {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  color: #212529;
+  text-align: right;
+}
+.blog-detail .card .card-body blockquote .author::before {
+  content: "";
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 3px;
+  padding-right: 20px;
+  background-color: #85c226;
+}
+.blog-detail .card .card-body blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background-color: #85c226;
+}
 .blog-detail .card .card-body p {
   margin: 30px 0;
   color: #6c757d;
@@ -13997,6 +14034,55 @@ section {
   border: 1px solid var(--bs-border-color);
   border-top: none;
   line-height: 30px;
+}
+
+.products .col {
+  text-align: center;
+}
+.products .col .img-block {
+  position: relative;
+  margin-bottom: 30px;
+  height: 310px;
+  border: 1px solid #dee2e6;
+}
+.products .col .img-block:hover .layer {
+  display: flex;
+}
+.products .col .img-block .layer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #dee2e6;
+}
+.products .col .img-block .layer .btn {
+  width: 50px;
+  height: 50px;
+  margin: 0 7.5px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0;
+}
+.products .col .img-block .layer .btn:hover {
+  background-color: #85c226;
+}
+.products .col a:hover {
+  color: #85c226;
+}
+.products .col .price {
+  font-size: 16px;
+  font-weight: bold;
+}
+.products .col .price del {
+  color: #adb5bd;
+}
+.products .col .price span {
+  color: #85c226;
 }
 
 .footer .top {
