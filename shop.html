@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Template</title>
 </head>
@@ -121,7 +122,16 @@
         <section class="products">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-10">
+                    <div class="col-lg-9">
+                        <div class="sort-block d-flex justify-content-between align-items-center">
+                            <span>Showing 1-9 of 15 results</span>
+                            <select class="form-select form-select-lg sort-select">
+                                <option selected>Default Sorting</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div class="col">
                                 <div class="img-block">
@@ -252,7 +262,132 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3 sidebar">
+                        <form action="" class="search-form">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Search">
+                                <label for="floatingInput">Search</label>
+                                <span class="icon"><i class="bi bi-search"></i></span>
+                            </div>
+                        </form>
+                        <p class="sidebar-title">Shop By Categories</p>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active">Locks</a>
+                            <a href="#" class="list-group-item list-group-item-action">Cameras</a>
+                            <a href="#" class="list-group-item list-group-item-action">Safes</a>
+                            <a href="#" class="list-group-item list-group-item-action">Digital</a>
+                            <a href="#" class="list-group-item list-group-item-action">Uncategories</a>
+                        </div>
+                        <p class="sidebar-title">Filter By Price</p>
+                        <form action="" class="form-range">
+
+                        </form>
+                        <p class="sidebar-title">Top Related Products</p>
+                        <div class="row row-cols-1 g-3 top-products">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-4">
+                                            <div class="img-block"><img src="" alt="..."></div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                                <div class="star-ratings-css">
+                                                    <div class="star-ratings-css-top">
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                    </div>
+                                                    <div class="star-ratings-css-bottom">
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <del>$15.00</del>
+                                                    <span>$12.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-4">
+                                            <div class="img-block"><img src="" alt="..."></div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                                <div class="star-ratings-css">
+                                                    <div class="star-ratings-css-top">
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                    </div>
+                                                    <div class="star-ratings-css-bottom">
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <del>$15.00</del>
+                                                    <span>$12.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="row g-0 align-items-center">
+                                        <div class="col-md-4">
+                                            <div class="img-block"><img src="" alt="..."></div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                                <div class="star-ratings-css">
+                                                    <div class="star-ratings-css-top">
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                        <span><i class="bi bi-star-fill"></i></span>
+                                                    </div>
+                                                    <div class="star-ratings-css-bottom">
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                        <span><i class="bi bi-star"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    <del>$15.00</del>
+                                                    <span>$12.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
