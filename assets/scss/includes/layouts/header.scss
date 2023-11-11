@@ -272,6 +272,10 @@
                     &:hover {
                         color: $black;
                     }
+
+                    &::after {
+                        display: none;
+                    }
                 }
 
                 .search-link {
