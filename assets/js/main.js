@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleSearch();
     cartModal();
     quantityControl();
+    priceRange();
 })
 
 function mainSlider() {
@@ -236,4 +237,18 @@ function quantityControl() {
                 })
                 .html(nextValue);
         });
+}
+
+function priceRange() {
+    $(".range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 200,
+        to: 500,
+        drag_interval: true,
+        min_interval: null,
+        max_interval: null,
+        hide_min_max: true,
+    });
 }

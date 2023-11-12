@@ -13542,6 +13542,27 @@ section {
   }
 }
 
+.price-range .irs--flat .irs-from, .price-range .irs--flat .irs-to, .price-range .irs--flat .irs-single {
+  top: 2px;
+}
+.price-range .irs--flat .irs-from::before, .price-range .irs--flat .irs-to::before {
+  border-top-color: #85c226;
+}
+.price-range .irs--flat .irs-from {
+  color: #85c226;
+  background-color: #fff;
+  border: 1px solid #85c226;
+}
+.price-range .irs--flat .irs-to, .price-range .irs-bar {
+  background-color: #85c226;
+}
+.price-range .irs--flat .irs-handle {
+  top: 19px;
+}
+.price-range .irs--flat .irs-handle i:first-child {
+  background-color: #85c226;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Thin"), local("Montserrat-Thin"), url("./fonts/Montserrat/Montserrat-Thin.eot?#iefix") format("embedded-opentype"), url("./fonts/Montserrat/Montserrat-Thin.woff") format("woff"), url("./fonts/Montserrat/Montserrat-Thin.ttf") format("truetype");

@@ -619,3 +619,33 @@ section {
         right: 20%;
     }
 }
+
+.price-range {
+    .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+        top: 2px;
+    }
+
+    .irs--flat .irs-from, .irs--flat .irs-to {
+        &::before {
+            border-top-color: $custom-green;
+        }
+    }
+
+    .irs--flat .irs-from {
+        color: $custom-green;
+        background-color: $white;
+        border: 1px solid $custom-green;
+    }
+
+    .irs--flat .irs-to, .irs-bar {
+        background-color: $custom-green;
+    }
+
+    .irs--flat .irs-handle {
+        top: 19px;
+
+        i:first-child {
+            background-color: $custom-green;
+        }
+    }
+}
