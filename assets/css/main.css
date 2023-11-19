@@ -15029,12 +15029,12 @@ section {
   }
 }
 
-.blog-detail .card {
+.blog-details .card {
   border: 1px solid #ced4da;
   border-radius: 10px;
   overflow: hidden;
 }
-.blog-detail .card .badge {
+.blog-details .card .badge {
   position: absolute;
   left: 40px;
   bottom: -15px;
@@ -15049,13 +15049,13 @@ section {
   border-radius: 5px;
   z-index: 1;
 }
-.blog-detail .card .card-img {
+.blog-details .card .card-img {
   position: relative;
   width: 100%;
   height: 400px;
   margin-bottom: 55px;
 }
-.blog-detail .card .card-img::after {
+.blog-details .card .card-img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -15064,39 +15064,39 @@ section {
   right: 0;
   background-color: #e9ecef;
 }
-.blog-detail .card .card-img img {
+.blog-details .card .card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.blog-detail .card .card-header, .blog-detail .card .card-body, .blog-detail .card .card-footer {
+.blog-details .card .card-header, .blog-details .card .card-body, .blog-details .card .card-footer {
   padding: 0 40px;
   border: none;
   background-color: transparent;
 }
-.blog-detail .card .card-header .blog-meta {
+.blog-details .card .card-header .blog-meta {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
-.blog-detail .card .card-header .blog-meta p {
+.blog-details .card .card-header .blog-meta p {
   margin: 0 5px;
   font-weight: bold;
 }
-.blog-detail .card .card-header .blog-meta p .icon {
+.blog-details .card .card-header .blog-meta p .icon {
   margin-right: 10px;
   font-size: 16px;
 }
-.blog-detail .card .card-header .blog-meta p:first-of-type {
+.blog-details .card .card-header .blog-meta p:first-of-type {
   margin-left: 0;
 }
-.blog-detail .card .card-header .blog-meta p.author {
+.blog-details .card .card-header .blog-meta p.author {
   color: #85c226;
 }
-.blog-detail .card .card-body {
+.blog-details .card .card-body {
   padding-bottom: 40px;
 }
-.blog-detail .card .card-body blockquote {
+.blog-details .card .card-body blockquote {
   position: relative;
   padding: 25px 40px;
   font-size: 18px;
@@ -15106,14 +15106,14 @@ section {
   color: #6c757d;
   background-color: #f8f9fa;
 }
-.blog-detail .card .card-body blockquote .author {
+.blog-details .card .card-body blockquote .author {
   position: relative;
   font-size: 16px;
   font-weight: bold;
   color: #212529;
   text-align: right;
 }
-.blog-detail .card .card-body blockquote .author::before {
+.blog-details .card .card-body blockquote .author::before {
   content: "";
   position: absolute;
   right: 20%;
@@ -15124,7 +15124,7 @@ section {
   padding-right: 20px;
   background-color: #85c226;
 }
-.blog-detail .card .card-body blockquote::before {
+.blog-details .card .card-body blockquote::before {
   content: "";
   position: absolute;
   left: 0;
@@ -15133,29 +15133,29 @@ section {
   width: 6px;
   background-color: #85c226;
 }
-.blog-detail .card .card-body p {
+.blog-details .card .card-body p {
   margin: 30px 0;
   color: #6c757d;
   font-size: 16px;
   line-height: 30px;
 }
-.blog-detail .card .card-body p:last-of-type {
+.blog-details .card .card-body p:last-of-type {
   margin-bottom: 0;
 }
-.blog-detail .card .card-footer {
+.blog-details .card .card-footer {
   padding: 25px 40px;
   border-top: 1px solid #dee2e6;
 }
-.blog-detail .card .card-footer .tags .icon {
+.blog-details .card .card-footer .tags .icon {
   font-size: 16px;
 }
-.blog-detail .card .card-footer .tags .btn-link {
+.blog-details .card .card-footer .tags .btn-link {
   padding: 0 2px;
   color: #495057;
   font-size: 14px;
   text-decoration: none;
 }
-.blog-detail .card .card-footer .tags .btn-link.active {
+.blog-details .card .card-footer .tags .btn-link.active {
   color: #85c226;
 }
 
@@ -15447,43 +15447,155 @@ section {
 .products .col .price span {
   color: #85c226;
 }
-.products .sidebar .search-form .form-floating input {
-  max-width: 270px;
+
+.shop-details .card {
+  background-color: transparent;
+  border: none;
+}
+.shop-details .card .img-block {
+  position: relative;
+  width: 100%;
+  height: 365px;
+  margin-bottom: 55px;
+}
+.shop-details .card .img-block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #e9ecef;
+}
+.shop-details .card .img-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shop-details .card .controls {
+  display: flex;
+  margin-top: 60px;
+}
+.shop-details .card .controls .quantity_control {
+  display: flex;
+  padding: 2px;
+  background-color: #adb5bd;
+}
+.shop-details .card .controls .quantity_control .quantity__value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  margin-right: 2px;
+  background-color: #fff;
+}
+.shop-details .card .controls .quantity_control .btn-group {
+  display: flex;
+  flex-direction: column;
+}
+.shop-details .card .controls .quantity_control .btn-group .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 27px;
+  margin: 0;
+  font-size: 18px;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+}
+.shop-details .card .controls .quantity_control .btn-group .btn:disabled {
+  background-color: transparent;
+}
+.shop-details .card .controls .toCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 190px;
+  width: 100%;
+  height: 60px;
+  margin: 0 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #85c226;
+  border-radius: 0;
+}
+.shop-details .card .controls .toShare, .shop-details .card .controls .toWish {
+  max-width: 60px;
+  width: 100%;
+  height: 60px;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.shop-details .card .price {
+  font-size: 16px;
+  font-weight: bold;
+}
+.shop-details .card .price del {
+  color: #adb5bd;
+}
+.shop-details .card .price span {
+  color: #85c226;
+}
+.shop-details .card .star-ratings-css {
+  margin: 15px 0;
+  font-size: 18px;
+}
+.shop-details .card .card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.shop-details .card .card-body p {
+  margin: 30px 0;
+  color: #6c757d;
+  font-size: 16px;
+  line-height: 30px;
+}
+.shop-details .card .card-body p:last-of-type {
+  margin-bottom: 0;
+}
+
+.shop-sidebar .search-form .form-floating input {
   width: 100%;
   height: 60px;
   border-radius: 0;
 }
-.products .sidebar .search-form .form-floating label {
+.shop-sidebar .search-form .form-floating label {
   font-size: 16px;
   color: #6c757d;
 }
-.products .sidebar .search-form .form-floating .icon {
+.shop-sidebar .search-form .form-floating .icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
   color: #85c226;
 }
-.products .sidebar .list-group {
+.shop-sidebar .list-group {
   border-radius: 0;
 }
-.products .sidebar .list-group .list-group-item {
+.shop-sidebar .list-group .list-group-item {
   padding-left: 0;
   font-size: 16px;
   border: none;
 }
-.products .sidebar .list-group .list-group-item.active, .products .sidebar .list-group .list-group-item:hover {
+.shop-sidebar .list-group .list-group-item.active, .shop-sidebar .list-group .list-group-item:hover {
   color: #85c226;
   background-color: transparent;
 }
-.products .sidebar .sidebar-title {
+.shop-sidebar .sidebar-title {
   position: relative;
   margin-top: 30px;
   margin-bottom: 50px;
   font-size: 18px;
   font-weight: bold;
 }
-.products .sidebar .sidebar-title::after {
+.shop-sidebar .sidebar-title::after {
   content: "";
   position: absolute;
   left: 0;
@@ -15492,40 +15604,40 @@ section {
   height: 2px;
   background-color: #85c226;
 }
-.products .sidebar .top-products .col {
+.shop-sidebar .top-products .col {
   margin: 0;
   padding: 0;
 }
-.products .sidebar .top-products .col .card {
+.shop-sidebar .top-products .col .card {
   padding: 25px 0;
   border: none;
   border-bottom: 1px solid #ced4da;
   border-radius: 0;
 }
-.products .sidebar .top-products .col .card .card-title {
+.shop-sidebar .top-products .col .card .card-title {
   margin-bottom: 0;
 }
-.products .sidebar .top-products .col .card .card-body {
+.shop-sidebar .top-products .col .card .card-body {
   padding: 0;
   margin-left: 15px;
   text-align: left;
 }
-.products .sidebar .top-products .col .img-block {
+.shop-sidebar .top-products .col .img-block {
   height: 90px;
   margin-bottom: 0;
   background-color: #e9ecef;
   border: none;
 }
-.products .sidebar .top-products .col .img-block img {
+.shop-sidebar .top-products .col .img-block img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.products .sidebar .top-products .col .star-ratings-css {
+.shop-sidebar .top-products .col .star-ratings-css {
   margin: 15px 0;
   font-size: 16px;
 }
-.products .sidebar .top-products .col .card-title, .products .sidebar .top-products .col .price {
+.shop-sidebar .top-products .col .card-title, .shop-sidebar .top-products .col .price {
   font-size: 14px;
 }
 

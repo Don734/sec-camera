@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,7 +38,7 @@
         </div>
         <div class="bottom-bar">
             <div class="container">
-                <div class="row justify-content-center align-items-center py-4">
+                <div class="row justify-content-center align-items-center py-2 py-md-4">
                     <div class="col-6 col-md-3">
                         <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="Logo"></a>
                     </div>
@@ -71,7 +72,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./about.html">About Us</a>
@@ -83,7 +84,7 @@
                                     <a class="nav-link" href="./blogs.html">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="./shop.html">Shop</a>
+                                    <a class="nav-link" href="./shop.html">Shop</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./contacts.html">Contact Us</a>
@@ -92,7 +93,7 @@
                         </div>
                         <ul class="navbar-nav tab-nav">
                             <li class="nav-item">
-                                <a class="nav-link search-link" href="#"><span class="icon"><i class="bi bi-search"></i></span></a>
+                                <a class="nav-link search-link"href="#"><span class="icon"><i class="bi bi-search"></i></span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link basket-link" href="#"><span class="icon"><i class="bi bi-basket3"></i></span></a>
@@ -110,157 +111,67 @@
     <main class="main">
         <section class="page-header">
             <div class="container">
-                <h2 class="page-title">Shop</h2>
+                <h2 class="page-title">Shop Detail</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                        <li class="breadcrumb-item active" aria-current="page">Shop Detail</li>
                     </ol>
                 </nav>
             </div>
         </section>
-        <section class="products">
+        <section class="shop-details">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
-                        <div class="sort-block d-flex justify-content-between align-items-center">
-                            <span>Showing 1-9 of 15 results</span>
-                            <select class="form-select form-select-lg sort-select">
-                                <option selected>Default Sorting</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col">
-                                <div class="img-block">
-                                    <img src="" alt="">
-                                    <div class="layer">
-                                        <button class="btn addToCart"><i class="bi bi-cart-fill"></i></button>
-                                        <button class="btn"><i class="bi bi-suit-heart-fill"></i></button>
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="img-block"><img src="" class="img-fluid rounded-start" alt="..."></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <div class="star-ratings-css">
+                                            <div class="star-ratings-css-top">
+                                                <span><i class="bi bi-star-fill"></i></span>
+                                                <span><i class="bi bi-star-fill"></i></span>
+                                                <span><i class="bi bi-star-fill"></i></span>
+                                                <span><i class="bi bi-star-fill"></i></span>
+                                                <span><i class="bi bi-star-fill"></i></span>
+                                            </div>
+                                            <div class="star-ratings-css-bottom">
+                                                <span><i class="bi bi-star"></i></span>
+                                                <span><i class="bi bi-star"></i></span>
+                                                <span><i class="bi bi-star"></i></span>
+                                                <span><i class="bi bi-star"></i></span>
+                                                <span><i class="bi bi-star"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <del>$15.00</del>
+                                            <span>$12.00</span>
+                                        </div>
+                                        <p>There are many variations of passages of Lorem Ipsum available,
+                                            but the majority have suffered alteration in some form, by injected 
+                                            humour, or randomised words which don't look even slightly 
+                                            believable. </p>
+                                        <div class="controls">
+                                            <div class="quantity_control">
+                                                <span class="quantity__value" data-product="" data-max="">1</span>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-quantity__plus" disabled><i class="bi bi-plus"></i></button>
+                                                    <button class="btn btn-quantity__minus"><i class="bi bi-dash"></i></button>
+                                                </div>
+                                            </div>
+                                            <button class="btn toCart"><span class="icon"><i class="bi bi-cart-fill"></i></span> Add To Cart</button>
+                                            <button class="btn toShare"><span class="icon"><i class="bi bi-share-fill"></i></span></button>
+                                            <button class="btn toWish"><span class="icon"><i class="bi bi-suit-heart-fill"></i></span></button>
+                                        </div>
                                     </div>
-                                </div>
-                                <h5 class="product-title"><a href="./shop-detail.html">Multi-Way Ultra Crop</a></h5>
-                                <div class="price">
-                                    <span>$12.00</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="img-block">
-                                    <img src="" alt="">
-                                    <div class="layer">
-                                        <button class="btn addToCart"><i class="bi bi-cart-fill"></i></button>
-                                        <button class="btn"><i class="bi bi-suit-heart-fill"></i></button>
-                                    </div>
-                                </div>
-                                <h5 class="product-title"><a href="#">Spotlight Outdoor Camera</a></h5>
-                                <div class="price">
-                                    <span>$18.00</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="img-block">
-                                    <img src="" alt="">
-                                    <div class="layer">
-                                        <button class="btn addToCart"><i class="bi bi-cart-fill"></i></button>
-                                        <button class="btn"><i class="bi bi-suit-heart-fill"></i></button>
-                                    </div>
-                                </div>
-                                <h5 class="product-title"><a href="#">Door Lock Security</a></h5>
-                                <div class="price">
-                                    <span>$35.00</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="img-block">
-                                    <img src="" alt="">
-                                    <div class="layer">
-                                        <button class="btn addToCart"><i class="bi bi-cart-fill"></i></button>
-                                        <button class="btn"><i class="bi bi-suit-heart-fill"></i></button>
-                                    </div>
-                                </div>
-                                <h5 class="product-title"><a href="#">Table View Camera</a></h5>
-                                <div class="price">
-                                    <span>$20.00</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="img-block">
-                                    <img src="" alt="">
-                                    <div class="layer">
-                                        <button class="btn addToCart"><i class="bi bi-cart-fill"></i></button>
-                                        <button class="btn"><i class="bi bi-suit-heart-fill"></i></button>
-                                    </div>
-                                </div>
-                                <h5 class="product-title"><a href="#">Premium Quality</a></h5>
-                                <div class="price">
-                                    <span>$35.00</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="img-block">
-                                    <img src="" alt="">
-                                    <div class="layer">
-                                        <button class="btn addToCart"><i class="bi bi-cart-fill"></i></button>
-                                        <button class="btn"><i class="bi bi-suit-heart-fill"></i></button>
-                                    </div>
-                                </div>
-                                <h5 class="product-title"><a href="#">CCD Camera</a></h5>
-                                <div class="price">
-                                    <span>$56.00</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="img-block">
-                                    <img src="" alt="">
-                                    <div class="layer">
-                                        <button class="btn addToCart"><i class="bi bi-cart-fill"></i></button>
-                                        <button class="btn"><i class="bi bi-suit-heart-fill"></i></button>
-                                    </div>
-                                </div>
-                                <h5 class="product-title"><a href="#">Motion Sensor</a></h5>
-                                <div class="price">
-                                    <span>$20.00</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="img-block">
-                                    <img src="" alt="">
-                                    <div class="layer">
-                                        <button class="btn addToCart"><i class="bi bi-cart-fill"></i></button>
-                                        <button class="btn"><i class="bi bi-suit-heart-fill"></i></button>
-                                    </div>
-                                </div>
-                                <h5 class="product-title"><a href="#">CCTV Security Cam</a></h5>
-                                <div class="price">
-                                    <span>$35.00</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="img-block">
-                                    <img src="" alt="">
-                                    <div class="layer">
-                                        <button class="btn addToCart"><i class="bi bi-cart-fill"></i></button>
-                                        <button class="btn"><i class="bi bi-suit-heart-fill"></i></button>
-                                    </div>
-                                </div>
-                                <h5 class="product-title"><a href="#">Battery Camera</a></h5>
-                                <div class="price">
-                                    <del>$15.00</del>
-                                    <span>$12.00</span>
                                 </div>
                             </div>
                         </div>
-                        <nav>
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item disabled"><a class="page-link prev-link" href="#"><< Prev</a></li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link active" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link next-link" href="#">Next >></a></li>
-                            </ul>
-                        </nav>
                     </div>
                     <div class="col-lg-3 shop-sidebar">
                         <form action="" class="search-form">
@@ -521,7 +432,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./about.html">About Us</a>
@@ -533,7 +444,7 @@
                                     <a class="nav-link" href="./blogs.html">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="./shop.html">Shop</a>
+                                    <a class="nav-link" href="./shop.html">Shop</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./contacts.html">Contact Us</a>
@@ -554,6 +465,211 @@
                     </div>
                     <a class="nav-link question-link" href="#">Get a quote</a>
                 </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-modal">
+        <div class="row row-cols-1 m-0 cart-products">
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-2">
+                            <div class="img-block"><img src="" alt="..."></div>
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                <div class="quantity_control">
+                                    <button class="btn btn-quantity__minus"><i class="bi bi-dash"></i></button>
+                                    <span class="quantity__value" data-product="" data-max="">1</span>
+                                    <button class="btn btn-quantity__plus"><i class="bi bi-plus"></i></button>
+                                </div>
+                                <div class="price">
+                                    <del>$15.00</del>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-2">
+                            <div class="img-block"><img src="" alt="..."></div>
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                <div class="quantity_control">
+                                    <button class="btn btn-quantity__minus"><i class="bi bi-dash"></i></button>
+                                    <span class="quantity__value" data-product="" data-max="">1</span>
+                                    <button class="btn btn-quantity__plus"><i class="bi bi-plus"></i></button>
+                                </div>
+                                <div class="price">
+                                    <del>$15.00</del>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-2">
+                            <div class="img-block"><img src="" alt="..."></div>
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                <div class="quantity_control">
+                                    <button class="btn btn-quantity__minus"><i class="bi bi-dash"></i></button>
+                                    <span class="quantity__value" data-product="" data-max="">1</span>
+                                    <button class="btn btn-quantity__plus"><i class="bi bi-plus"></i></button>
+                                </div>
+                                <div class="price">
+                                    <del>$15.00</del>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-2">
+                            <div class="img-block"><img src="" alt="..."></div>
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                <div class="quantity_control">
+                                    <button class="btn btn-quantity__minus"><i class="bi bi-dash"></i></button>
+                                    <span class="quantity__value" data-product="" data-max="">1</span>
+                                    <button class="btn btn-quantity__plus"><i class="bi bi-plus"></i></button>
+                                </div>
+                                <div class="price">
+                                    <del>$15.00</del>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-2">
+                            <div class="img-block"><img src="" alt="..."></div>
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                <div class="quantity_control">
+                                    <button class="btn btn-quantity__minus"><i class="bi bi-dash"></i></button>
+                                    <span class="quantity__value" data-product="" data-max="">1</span>
+                                    <button class="btn btn-quantity__plus"><i class="bi bi-plus"></i></button>
+                                </div>
+                                <div class="price">
+                                    <del>$15.00</del>
+                                    <span>$12.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="total">Total $60</p>
+        <a href="./checkout.html" class="cart-link">Checkout</a>
+    </div>
+    <div class="search-modal">
+        <div class="col">
+            <form action="" class="search-form">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Search">
+                    <label for="floatingInput">Search</label>
+                    <span class="icon"><i class="bi bi-search"></i></span>
+                </div>
+            </form>
+            <div class="row row-cols-1 m-0 found-products">
+                <div class="col">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <div class="img-block"><img src="" alt="..."></div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <div class="img-block"><img src="" alt="..."></div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <div class="img-block"><img src="" alt="..."></div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <div class="img-block"><img src="" alt="..."></div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <div class="img-block"><img src="" alt="..."></div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="#">CCTV Camera</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
