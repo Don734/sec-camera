@@ -110,6 +110,7 @@
         .controls {
             display: flex;
             margin-top: 60px;
+            margin-bottom: 30px;
 
             .quantity_control {
                 display: flex;
@@ -147,6 +148,8 @@
                         }
                     }
                 }
+
+                
             }
 
             .toCart {
@@ -154,24 +157,43 @@
                 justify-content: center;
                 align-items: center;
                 max-width: 190px;
-                width: 100%;
+                width: 190px;
                 height: 60px;
-                margin: 0 20px;
+                margin-left: 20px;
                 font-size: 16px;
                 color: $white;
                 background-color: $custom-green;
                 border-radius: 0;
+
+                @include media-breakpoint-up(lg) {
+                    margin: 0 20px;
+                }
             }
 
             .toShare, .toWish {
                 max-width: 60px;
-                width: 100%;
+                width: 60px;
                 height: 60px;
                 margin: 0 10px;
+                margin-top: 10px;
                 color: $white;
                 font-size: 18px;
                 background-color: $black;
                 border-radius: 50%;
+
+                @include media-breakpoint-up(md) {
+                    margin-top: 0;
+                }
+            }
+
+            & > .btn-group {
+                width: 100%;
+                justify-content: space-between;
+
+                @include media-breakpoint-up(md) {
+                    width: auto;
+                    justify-content: unset;
+                }
             }
         }
 
@@ -194,8 +216,7 @@
         }
 
         .card-body {
-            padding-top: 0;
-            padding-bottom: 0;
+            padding: 0;
 
             p {
                 margin: 30px 0;
@@ -206,6 +227,10 @@
                 &:last-of-type {
                     margin-bottom: 0;
                 }
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding: 0 15px;
             }
         }
     }

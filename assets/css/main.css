@@ -15160,6 +15160,8 @@ section {
 }
 
 .partners {
+  display: flex;
+  align-items: center;
   height: 300px;
   background-color: #f8f9fa;
 }
@@ -15475,6 +15477,7 @@ section {
 .shop-details .card .controls {
   display: flex;
   margin-top: 60px;
+  margin-bottom: 30px;
 }
 .shop-details .card .controls .quantity_control {
   display: flex;
@@ -15514,23 +15517,44 @@ section {
   justify-content: center;
   align-items: center;
   max-width: 190px;
-  width: 100%;
+  width: 190px;
   height: 60px;
-  margin: 0 20px;
+  margin-left: 20px;
   font-size: 16px;
   color: #fff;
   background-color: #85c226;
   border-radius: 0;
 }
+@media (min-width: 992px) {
+  .shop-details .card .controls .toCart {
+    margin: 0 20px;
+  }
+}
 .shop-details .card .controls .toShare, .shop-details .card .controls .toWish {
   max-width: 60px;
-  width: 100%;
+  width: 60px;
   height: 60px;
   margin: 0 10px;
+  margin-top: 10px;
   color: #fff;
   font-size: 18px;
   background-color: #000;
   border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .shop-details .card .controls .toShare, .shop-details .card .controls .toWish {
+    margin-top: 0;
+  }
+}
+.shop-details .card .controls > .btn-group {
+  width: 100%;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .shop-details .card .controls > .btn-group {
+    width: auto;
+    justify-content: unset;
+  }
 }
 .shop-details .card .price {
   font-size: 16px;
@@ -15547,8 +15571,7 @@ section {
   font-size: 18px;
 }
 .shop-details .card .card-body {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 .shop-details .card .card-body p {
   margin: 30px 0;
@@ -15558,6 +15581,11 @@ section {
 }
 .shop-details .card .card-body p:last-of-type {
   margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .shop-details .card .card-body {
+    padding: 0 15px;
+  }
 }
 
 .shop-sidebar .search-form .form-floating input {
