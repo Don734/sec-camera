@@ -165,6 +165,16 @@
                 background-color: $custom-green;
                 border-radius: 0;
 
+                .icon {
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    color: $custom-green;
+                    background-color: transparent;
+                    border: 1px solid $custom-green;
+                }
+
                 @include media-breakpoint-up(lg) {
                     margin: 0 20px;
                 }
@@ -180,6 +190,12 @@
                 font-size: 18px;
                 background-color: $black;
                 border-radius: 50%;
+
+                &:hover {
+                    color: $custom-green;
+                    background-color: transparent;
+                    border: 1px solid $custom-green;
+                }
 
                 @include media-breakpoint-up(md) {
                     margin-top: 0;

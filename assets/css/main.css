@@ -15525,6 +15525,14 @@ section {
   background-color: #85c226;
   border-radius: 0;
 }
+.shop-details .card .controls .toCart .icon {
+  margin-right: 10px;
+}
+.shop-details .card .controls .toCart:hover {
+  color: #85c226;
+  background-color: transparent;
+  border: 1px solid #85c226;
+}
 @media (min-width: 992px) {
   .shop-details .card .controls .toCart {
     margin: 0 20px;
@@ -15540,6 +15548,11 @@ section {
   font-size: 18px;
   background-color: #000;
   border-radius: 50%;
+}
+.shop-details .card .controls .toShare:hover, .shop-details .card .controls .toWish:hover {
+  color: #85c226;
+  background-color: transparent;
+  border: 1px solid #85c226;
 }
 @media (min-width: 768px) {
   .shop-details .card .controls .toShare, .shop-details .card .controls .toWish {
