@@ -18,8 +18,8 @@ function mainSlider() {
     let swiperOptions = {
         loop: true,
         navigation: {
-            nextEl: '.slider .swiper-button-next',
-            prevEl: '.slider .swiper-button-prev',
+            nextEl: '.swiper-main-buttons .swiper-button-next',
+            prevEl: '.swiper-main-buttons .swiper-button-prev',
         },
     };
     const swiper = new Swiper(swiperContainer, swiperOptions);
@@ -82,8 +82,8 @@ function newsSlider() {
             el: '.swiper-pagination',
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-news-buttons .swiper-button-next',
+            prevEl: '.swiper-news-buttons .swiper-button-prev',
         },
         slidesPerView: 1,
         spaceBetween: 20,
@@ -106,8 +106,8 @@ function partnersSlider() {
     let swiperContainer = '.swiper-partner';
     let swiperOptions = {
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-partners-buttons .swiper-button-next',
+            prevEl: '.swiper-partners-buttons .swiper-button-prev',
         },
         loop: true,
         slidesPerView: 2,

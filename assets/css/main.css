@@ -14144,10 +14144,12 @@ section {
   width: 100%;
   height: 100%;
   background-color: #e9ecef;
-  background-image: url("../images/about-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   z-index: 2;
+}
+.about .img-block .bg-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .about .img-block .play-video {
   position: absolute;
@@ -14173,11 +14175,13 @@ section {
   width: 165px;
   height: 165px;
   background-color: #495057;
-  background-image: url("../images/home-about-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   z-index: 2;
+}
+.about .img-block .preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .about .img-block::before, .about .img-block::after {
   content: "";
