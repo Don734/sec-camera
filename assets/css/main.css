@@ -15686,6 +15686,109 @@ section {
   font-size: 14px;
 }
 
+.checkout input[type=checkbox], .checkout input[type=radio] {
+  display: none;
+}
+.checkout input[type=checkbox]:checked ~ label, .checkout input[type=radio]:checked ~ label {
+  background: #e9ecef;
+  border-color: #85c226;
+  border-width: 2px;
+}
+.checkout input[type=checkbox]:checked ~ label::before, .checkout input[type=radio]:checked ~ label::before {
+  border-width: 5px;
+}
+.checkout .radio-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2.5rem 0.5rem 0.9375rem;
+  height: 75px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.checkout .radio-input div {
+  margin: 0 0.5em;
+}
+.checkout .radio-input div:first-of-type {
+  margin-left: 0;
+}
+.checkout .radio-input div:last-of-type {
+  margin-right: 0;
+}
+.checkout .radio-input .radio-label_title {
+  padding-left: 1.5em;
+  font-weight: 600;
+  line-height: 20px;
+}
+.checkout .radio-input .radio-label__description {
+  line-height: 20px;
+}
+.checkout .radio-input .radio-label__img {
+  width: 65px;
+  height: 100%;
+  padding: 3px;
+  border: 1px solid rgba(133, 194, 38, 0.7);
+  border-radius: 5px;
+}
+.checkout .radio-input .radio-label__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.checkout .radio-input::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #85c226;
+  border-radius: 50%;
+}
+.checkout .radio-input:hover {
+  background: #e9ecef;
+  border-color: #85c226;
+  border-width: 2px;
+}
+.checkout .products .col {
+  margin: 0;
+  padding: 0;
+}
+.checkout .products .col .card {
+  padding: 25px 0;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+}
+.checkout .products .col .card .card-title {
+  margin-bottom: 0;
+}
+.checkout .products .col .card .card-body {
+  padding: 0;
+  margin-left: 15px;
+  text-align: left;
+}
+.checkout .products .col .img-block {
+  height: 90px;
+  margin-bottom: 0;
+  background-color: #e9ecef;
+  border: none;
+}
+.checkout .products .col .img-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.checkout .products .col .star-ratings-css {
+  margin: 15px 0;
+  font-size: 16px;
+}
+.checkout .products .col .card-title, .checkout .products .col .price {
+  font-size: 14px;
+}
+
 .footer .top {
   padding-top: 100px;
   padding-bottom: 100px;

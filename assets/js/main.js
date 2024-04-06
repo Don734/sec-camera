@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cartModal();
     quantityControl();
     priceRange();
+    featuresInput();
 })
 
 function mainSlider() {
@@ -251,4 +252,20 @@ function priceRange() {
         max_interval: null,
         hide_min_max: true,
     });
+}
+
+function featuresInput() {
+    const inputValue = $(".features input[type='checkbox']");
+    const inputFeatures = $('#features');
+    let items = inputFeatures.val().split(',').length == 0 ? [] : inputFeatures.val().split(',');
+
+    inputValue.on('change', function(e) {
+        if (this.checked) {
+            items.push(this.value);
+        } else {
+            items.splice(items.indexOf(this.value));
+        }
+        items = items.filter(el => el != null && el != "");
+        inputFeatures.val(items);
+    })
 }
