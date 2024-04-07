@@ -15605,6 +15605,37 @@ section {
   }
 }
 
+.order-page .card .card-header h5, .order-page .card .card-header .h5 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 16px;
+}
+.order-page .card .card-header h5 span, .order-page .card .card-header .h5 span {
+  position: relative;
+  padding: 0 5px;
+  font-weight: normal;
+  font-size: 14px;
+}
+.order-page .card .card-header h5 span::before, .order-page .card .card-header .h5 span::before {
+  content: "-";
+  margin-right: 5px;
+}
+.order-page .card .card-header h6, .order-page .card .card-header .h6 {
+  margin: 0;
+  font-weight: 500;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+.order-page .card .card-header .btn-print {
+  color: #85c226;
+  border: 1px solid #85c226;
+}
+.order-page .card .card-header .btn-print:hover {
+  color: #fff;
+  background-color: #85c226;
+}
+
 .shop-sidebar .search-form .form-floating input {
   width: 100%;
   height: 60px;

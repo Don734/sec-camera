@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cartModal();
     quantityControl();
     priceRange();
+    hoverRatings();
     featuresInput();
 })
 
@@ -213,10 +214,6 @@ function cartModal() {
 
 function quantityControl() {
     const productQuantityContainer = $(".quantity_control");
-
-    const productQuantityValue = productQuantityContainer.find(
-        ".quantity__value"
-    );
     productQuantityContainer
         .find(".btn")
         .on("click", function (e) {
@@ -224,12 +221,20 @@ function quantityControl() {
             const btn = $(this);
             let quantityValue = btn.closest('.quantity_control').find('.quantity__value');
             const max = quantityValue.data("max") * 1;
-            const value = quantityValue.data("value") * 1;
+            const value = quantityValue.html() * 1;
             let nextValue;
             if (btn.hasClass("btn-quantity__minus")) {
                 nextValue = value > 1 ? value - 1 : value;
+                productQuantityContainer.find('.btn-quantity__plus').prop('disabled', false);
+                if (value == 1) {
+                    productQuantityContainer.find('.btn-quantity__minus').prop('disabled', true);
+                }
             } else {
                 nextValue = value < max ? value + 1 : value;
+                productQuantityContainer.find('.btn-quantity__minus').prop('disabled', false);
+                if (value == max) {
+                    productQuantityContainer.find('.btn-quantity__plus').prop('disabled', true);
+                }
             }
             
             quantityValue
@@ -268,4 +273,14 @@ function featuresInput() {
         items = items.filter(el => el != null && el != "");
         inputFeatures.val(items);
     })
+}
+
+function hoverRatings() {
+    const rating = $('.star-ratings-css .star-ratings-css-bottom span');
+    let width = 0;
+
+    $(rating).mouseover((e) => {
+        width = ($(this).index() + 1) * 20;
+        $(e.target).parents().siblings('.star-ratings-css-top').css('width', `${width}`);
+    });
 }

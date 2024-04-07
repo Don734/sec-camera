@@ -252,6 +252,48 @@
     }
 }
 
+.order-page {
+    .card {
+        .card-header {
+            h5 {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                font-size: 16px;
+
+                span {
+                    position: relative;
+                    padding: 0 5px;
+                    font-weight: normal;
+                    font-size: 14px;
+
+                    &::before {
+                        content: '-';
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            h6 {
+                margin: 0;
+                font-weight: 500;
+                color: $gray-600;
+                text-transform: uppercase;
+            }
+
+            .btn-print {
+                color: $custom-green;
+                border: 1px solid $custom-green;
+
+                &:hover {
+                    color: $white;
+                    background-color: $custom-green;
+                }
+            }
+        }
+    }
+}
+
 .shop-sidebar {
     .search-form {
         .form-floating {
