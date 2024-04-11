@@ -365,18 +365,21 @@ section {
     }
 }
 
-.cart-modal {
+.cart-modal, .search-modal {
     display: none;
     position: fixed;
     top: 245px;
     right: 0;
     max-width: 380px;
     width: 100%;
+    border: 1px solid $gray-300;
     background-color: $white;
     border-radius: 5px;
     overflow: hidden;
     z-index: 10;
+}
 
+.cart-modal {
     .cart-products {
         margin-top: 20px;
         max-height: 510px;
@@ -509,17 +512,6 @@ section {
 }
 
 .search-modal {
-    display: none;
-    position: fixed;
-    top: 245px;
-    right: 0;
-    max-width: 380px;
-    width: 100%;
-    background-color: $white;
-    border-radius: 5px;
-    overflow: hidden;
-    z-index: 10;
-
     input {
         border-radius: 0;
     }
