@@ -155,21 +155,6 @@
             right: -100px;
         }
     }
-
-    @include media-breakpoint-up(xxl) {
-        .swiper-button-prev, .swiper-button-next {
-            width: 100px;
-            height: 100px;
-        }
-
-        .swiper-button-prev {
-            left: -150px;
-        }
-    
-        .swiper-button-next {
-            right: -150px;
-        }
-    }
 }
 
 .blog-details {
